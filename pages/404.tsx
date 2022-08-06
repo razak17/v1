@@ -7,7 +7,7 @@ const NotFound: NextPage = () => {
   return (
     <div className={styles.container}>
       <NextSeo title='404' />
-      <h3>That page does not exist...</h3>
+      <h3>404 | That page does not exist...</h3>
     </div>
   );
 };
