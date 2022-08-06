@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <NextSeo title='Home' description='Home Page For Razak Mo' />
-      <h1>Coming Soon..</h1>
+      <h3>Coming Soon..</h3>
     </div>
   );
 };
