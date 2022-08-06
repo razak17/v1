@@ -3,13 +3,14 @@ import { NextSeo } from 'next-seo';
 
 import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => {
+const NotFound: NextPage = () => {
   return (
     <div className={styles.container}>
-      <NextSeo title='Home' description='Home Page For Razak Mo' />
-      <h1>Coming Soon..</h1>
+      <NextSeo title='404' />
+      <p>That page does not exist</p>
     </div>
   );
 };
 
-export default Home;
+export default NotFound;
+
