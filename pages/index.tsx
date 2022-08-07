@@ -12,18 +12,26 @@ const Home: NextPage = () => {
       <Navbar />
       <div className={styles.showcase}>
         <div className={`${mixins.container} ${styles.showcase_grid}`}>
-          <div className={styles.showcase_text}>
-            <h1>Software Developer</h1>
+          <div>
+            <h1 className={mixins.lg}>Software Developer</h1>
             <p>
               Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the
               form to try a demo of our platform
             </p>
-            <a href='#' className={`${mixins.btn} ${mixins.btn_outline}`}>
-              Read More
+            <a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
+              Get In touch
             </a>
           </div>
         </div>
       </div>
+      <section className={styles.about}>
+        <div className={mixins.container}>
+          <h1 className={`${styles.about_heading} ${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}> About Me</h1>
+          <p className={`${mixins.text_center} ${mixins.text_center} ${mixins.m1}`}>
+            A quick introduction about who I am and what my capabilities are.
+          </p>
+        </div>
+      </section>
     </>
   );
 };

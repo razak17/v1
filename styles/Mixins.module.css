@@ -6,10 +6,10 @@
 }
 
 .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .grid {
@@ -25,8 +25,6 @@
 	display: inline-block;
 	padding: 10px 30px;
 	cursor: pointer;
-	background: var(--primary-color);
-	color: #fff;
 	border: none;
 	border-radius: 5px;
 }
@@ -38,4 +36,82 @@
 
 .btn:hover {
 	transform: scale(0.98);
+  background-color: rgba(220,38,38,0.8);
+}
+
+/* Backgrounds & colored buttons */
+.bg_primary,
+.btn_primary {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.bg_secondary,
+.btn_secondary {
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
+.bg_dark,
+.btn_dark {
+	background-color: var(--dark-color);
+	color: #fff;
+}
+
+.bg_light,
+.btn_light {
+	background-color: var(--light-color);
+	color: #333;
+}
+
+.btn_cta {
+	background-color: var(--alert-color);
+	color: #fff;
+}
+
+/* Text colors */
+.text_primary {
+	color: var(--primary-color);
+}
+
+.text_secondary {
+	color: var(--secondary-color);
+}
+
+.text_dark {
+	color: var(--dark-color);
+}
+
+.text_light {
+	color: var(--light-color);
+}
+
+/* Text sizes */
+.lead {
+	font-size: 1.5rem;
+}
+
+.sm {
+	font-size: 1.2rem;
+}
+
+.md {
+	font-size: 2rem;
+}
+
+.lg {
+	font-size: 3rem;
+}
+
+.xl {
+	font-size: 4rem;
+}
+
+.text_center {
+	text-align: center;
+}
+
+/* Margin */
+.m1 {
+	margin: 1rem 0;
 }
