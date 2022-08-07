@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 import styles from '../styles/Home.module.css';
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
         <div className={`${mixins.container} ${styles.showcase_grid}`}>
           <div>
             <h1 className={mixins.lg}>Software Developer</h1>
-            <p>
+            <p className={mixins.text_transparent}>
               Deploy web apps of all kinds, from large scale enterprise APIs to static
               websites for individuals. Fill out the form to try a demo of our platform
             </p>
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

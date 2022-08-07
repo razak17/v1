@@ -4,6 +4,11 @@
 	height: 70px;
 }
 
+.nav {
+  display: flex;
+	justify-content: space-between;
+}
+
 .nav_links {
 	display: flex;
 }
@@ -17,10 +22,6 @@
 
 .nav_link:hover {
 	border-bottom: 2px #fff solid;
-}
-
-.nav {
-	justify-content: space-between;
 }
 
 .logo {

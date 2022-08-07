@@ -40,10 +40,4 @@
 
 .about {
   padding-top: 72px;
-  animation: slideInFromBottom 1s ease-in;
-}
-
-.about_text {
-  max-width: 500px;
-  margin: auto;
 }

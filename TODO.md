@@ -1,3 +1,4 @@
 ## Navbar
 
-Find a way to include contact in nav on smaller screens
+- Find a way to include contact in nav on smaller screens
+- name next-sitemap config file correctly
