@@ -15,8 +15,8 @@ const Home: NextPage = () => {
           <div>
             <h1 className={mixins.lg}>Software Developer</h1>
             <p>
-              Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the
-              form to try a demo of our platform
+              Deploy web apps of all kinds, from large scale enterprise APIs to static
+              websites for individuals. Fill out the form to try a demo of our platform
             </p>
             <a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
               Get In touch
@@ -24,14 +24,18 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <section className={styles.about}>
+      <div className={styles.about}>
         <div className={mixins.container}>
-          <h1 className={`${styles.about_heading} ${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}> About Me</h1>
+          <h1
+            className={`${styles.about_heading} ${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}
+          >
+            About Me
+          </h1>
           <p className={`${mixins.text_center} ${mixins.text_center} ${mixins.m1}`}>
             A quick introduction about who I am and what my capabilities are.
           </p>
         </div>
-      </section>
+      </div>
     </>
   );
 };

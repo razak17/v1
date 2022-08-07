@@ -19,11 +19,8 @@
 	border-bottom: 2px #fff solid;
 }
 
-.navbar_flex {
-	display: flex;
+.nav {
 	justify-content: space-between;
-	align-items: center;
-	height: 100%;
 }
 
 .logo {
@@ -31,7 +28,7 @@
 }
 
 .cta {
-	padding: 8px 24px;
+	padding: 6px 24px;
 }
 
 /* Mobile */
@@ -40,7 +37,7 @@
 		height: 110px;
 	}
 
-	.navbar_flex {
+	.nav {
 		flex-direction: column;
 	}
 

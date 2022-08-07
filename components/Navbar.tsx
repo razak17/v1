@@ -4,7 +4,7 @@ import mixins from '../styles/Mixins.module.css';
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={`${mixins.container} ${styles.navbar_flex}`}>
+      <div className={`${mixins.container} ${mixins.flex} ${styles.nav}`}>
         <h1 className={styles.logo}>Razak Mo</h1>
         <nav>
           <ul className={styles.nav_links}>
