@@ -1,26 +1,23 @@
 import styles from '../styles/Navbar.module.css';
+import mixins from '../styles/Mixins.module.css';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={`${styles.container} ${styles.flex}`}>
-        <h1 className={styles.logo}>Razak Mo</h1>
+      <div className={`${mixins.container} ${styles.navbar_flex}`}>
+        <h1 className={mixins.logo}>Razak Mo</h1>
         <nav>
           <ul>
-            <li>
-              <a href='index.html'>Home</a>
-            </li>
-            <li>
-              <a href='features.html'>Features</a>
-            </li>
-            <li>
-              <a href='docs.html'>Docs</a>
-            </li>
+            {['home', 'about', 'work', 'contact'].map((item) => (
+              <li key={`link-${item}`}>
+                <a href={`#${item.toUpperCase()}`}>{item}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

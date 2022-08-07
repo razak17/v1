@@ -1,22 +1,7 @@
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
-  max-width: 100%;
 }
 
 .navbar ul {
@@ -33,6 +18,10 @@
   border-bottom: 2px #fff solid;
 }
 
-.navbar .flex {
+.navbar_flex {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
+
