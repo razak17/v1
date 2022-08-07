@@ -13,4 +13,3 @@ const NotFound: NextPage = () => {
 };
 
 export default NotFound;
-
