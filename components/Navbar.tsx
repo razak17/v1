@@ -17,7 +17,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <a href='#' className={`${mixins.btn} ${mixins.btn_cta} ${styles.cta}`}>
+        <a href='#' className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}>
           Contact
         </a>
       </div>
