@@ -4,10 +4,13 @@
 	height: 70px;
 }
 
-.nav {
-  display: flex;
+.nav_flex {
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	height: 100%;
 }
+
 
 .nav_links {
 	display: flex;
