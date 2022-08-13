@@ -1,0 +1,45 @@
+.showcase {
+	height: 450px;
+	background-color: var(--primary-color);
+	color: #fff;
+	position: relative;
+}
+
+.showcase p {
+	margin: 1.2rem 0;
+}
+
+.showcase a {
+	margin-top: 1.2rem;
+}
+
+.showcase_grid {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	overflow: visible;
+	grid-template-columns: 55% auto;
+	gap: 30px;
+}
+
+.showcase::before,
+.showcase::after {
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -70px;
+	right: 0;
+	left: 0;
+	background: #fff;
+	transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	-moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+}
+
+@media (max-width: 768px) {
+	.showcase_grid {
+		grid-template-columns: 75% auto;
+	}
+}
