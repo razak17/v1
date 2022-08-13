@@ -13,7 +13,7 @@ const Footer = () => {
           <p className={styles.copy_text}>Copyright &copy; 2022</p>
         </div>
         <div>
-          <h3 className={styles.footer_heading}>Pages</h3>
+          <h3>Pages</h3>
           <ul>
             {['home', 'about', 'work', 'blog'].map((item) => (
               <li className={styles.footer_item} key={`link-${item}`}>
@@ -25,7 +25,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className={styles.footer_heading}>Quick Links</h3>
+          <h3>Quick Links</h3>
           <ul>
             {['blog', 'projects', 'imprint', 'privacy policy'].map((item) => (
               <li className={styles.footer_item} key={`link-${item}`}>
@@ -37,9 +37,8 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className={styles.footer_heading}>Contact</h3>
-          <p className={mixins.text_transparent}>Are you interested in working together?</p>
-          <br />
+          <h3>Contact</h3>
+          <p className={`${mixins.text_transparent} ${styles.contact_text}`}>Are you interested in working together?</p>
           <a href='#' className={`${mixins.btn} ${mixins.btn_cta} ${styles.footer_cta}`}>
             Get In touch
           </a>

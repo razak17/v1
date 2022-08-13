@@ -5,6 +5,7 @@
 	--light-color: #f4f4f4;
 	--alert-color: #dc2626;
 	--transparent-color: rgba(243, 244, 246, 0.3);
+  --btn-primary-hover: rgba(220, 38, 38, 0.9);
 }
 
 * {
