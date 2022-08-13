@@ -39,7 +39,7 @@ const Footer = () => {
         <div>
           <h3>Contact</h3>
           <p className={`${mixins.text_transparent} ${styles.contact_text}`}>Are you interested in working together?</p>
-          <a href='#' className={`${mixins.btn} ${mixins.btn_cta} ${styles.footer_cta}`}>
+          <a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
             Get In touch
           </a>
         </div>

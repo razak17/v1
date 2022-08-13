@@ -15,10 +15,6 @@
 	padding: 0.4rem;
 }
 
-.footer_cta {
-	margin-top: 0.4rem;
-}
-
 .copy_text {
 	color: var(--transparent-color);
 	margin-top: 1.5rem;
@@ -26,5 +22,5 @@
 
 .contact_text {
   width: 240px;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
