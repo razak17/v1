@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <h2>Razak Mo</h2>
           <p className={mixins.text_transparent}>Software Developer</p>
-          <p className={styles.copy_text}>Copyright &copy; 2022</p>
+          <p className={styles.copy_text}>&copy; 2022 Razak Mo</p>
         </div>
         <div>
           <h3>Pages</h3>
