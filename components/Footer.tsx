@@ -1,15 +1,35 @@
 import styles from '../styles/Footer.module.css';
 import mixins from '../styles/Mixins.module.css';
+import IconGitHub from '../components/icons/github';
+import IconTwitter from './icons/twitter';
+import IconLinkedin from './icons/linkedin';
 
 const Footer = () => {
 	return (
 		<div
 			className={`${styles.footer} ${mixins.bg_primary} ${mixins.py5} ${styles.container}`}
 		>
-			<div className={`${mixins.container} ${mixins.grid} ${mixins.grid4}`}>
+			<div className={`${mixins.container} ${styles.footer_grid}`}>
 				<div>
 					<h2>Razak Mo</h2>
 					<p className={mixins.text_transparent}>Software Developer</p>
+					<ul className={styles.social_list}>
+						<li>
+							<a href='#' target='_blank' rel='noreferrer'>
+								<IconGitHub />
+							</a>
+						</li>
+						<li>
+							<a href='#' target='_blank' rel='noreferrer'>
+								<IconTwitter />
+							</a>
+						</li>
+						<li>
+							<a href='#' target='_blank' rel='noreferrer'>
+								<IconLinkedin />
+							</a>
+						</li>
+					</ul>
 					<p className={styles.copy_text}>&copy; 2022 Razak Mo</p>
 				</div>
 				<div>
