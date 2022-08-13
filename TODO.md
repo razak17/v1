@@ -1,4 +1,6 @@
-## Navbar
+## TODO
 
+✅ name next-sitemap config file correctly
 - Find a way to include contact in nav on smaller screens
-- name next-sitemap config file correctly
+- Make Logo clickable
+
