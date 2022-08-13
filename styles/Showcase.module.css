@@ -6,11 +6,11 @@
 }
 
 .showcase p {
-	margin: 1.2rem 0;
+  padding-top: 1rem;
 }
 
 .showcase a {
-	margin-top: 1.2rem;
+	margin-top: 1rem;
 }
 
 .showcase_grid {
