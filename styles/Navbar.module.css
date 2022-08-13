@@ -41,7 +41,7 @@
 		height: 110px;
 	}
 
-	.nav {
+	.nav_flex {
 		flex-direction: column;
 	}
 
