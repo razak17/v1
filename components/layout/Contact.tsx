@@ -10,7 +10,10 @@ const Contact = () => {
 					Contact
 				</h1>
 				<p className={`${mixins.text_center} ${mixins.text_center} ${mixins.m1}`}>
-					A quick introduction about who I am and what my capabilities are.
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea deleniti
+					voluptatem officiis molestiae nisi unde quasi molestias necessitatibus
+					atque soluta quaerat provident accusamus animi, in sint eveniet
+					exercitationem natus recusandae.
 				</p>
 			</div>
 		</div>

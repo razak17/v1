@@ -8,8 +8,8 @@ const Showcase = () => {
 				<div>
 					<h1 className={mixins.lg}>Software Developer</h1>
 					<p className={mixins.text_transparent}>
-						Deploy web apps of all kinds, from large scale enterprise APIs to static
-						websites for individuals. Fill out the form to try a demo of our platform
+						Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum
+						sint consectetur cupidatat.
 					</p>
 					<a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
 						Get In touch
