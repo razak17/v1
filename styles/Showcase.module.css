@@ -27,14 +27,14 @@
 .showcase::after {
 	content: '';
 	position: absolute;
-	height: 100px;
-	bottom: -70px;
+	height: 80px;
+	bottom: -50px;
 	right: 0;
 	left: 0;
 	background: var(--light-color);
 	transform: skewY(-3deg);
 	-webkit-transform: skewY(-3deg);
-	-moz-transform: skewY(-3deg);
+	-moz-transform: skewY(-2deg);
 	-ms-transform: skewY(-3deg);
 }
 
