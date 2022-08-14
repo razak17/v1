@@ -11,14 +11,13 @@
 	height: 100%;
 }
 
-
 .nav_links {
 	display: flex;
 }
 
 .nav_link {
-	color: #fff;
-	padding: .6rem 1rem;
+	color: var(--light-color);
+	padding: 0.6rem 1rem;
 	margin: 0 0.2rem;
 	text-transform: capitalize;
 }
@@ -29,6 +28,7 @@
 
 .logo {
 	font-size: 1.3rem;
+	color: var(--light-color);
 }
 
 .cta {

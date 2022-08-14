@@ -31,7 +31,7 @@
 	bottom: -70px;
 	right: 0;
 	left: 0;
-	background: #fff;
+	background: var(--light-color);
 	transform: skewY(-3deg);
 	-webkit-transform: skewY(-3deg);
 	-moz-transform: skewY(-3deg);

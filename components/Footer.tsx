@@ -63,7 +63,7 @@ const Contact = () => (
 
 const Footer = () => {
 	return (
-		<div className={`${mixins.bg_primary} ${mixins.py5} ${styles.container}`}>
+		<div className={`${mixins.bg_primary} ${styles.container}`}>
 			<div className={`${mixins.container} ${styles.footer_grid}`}>
 				<Me />
 				<Pages />

@@ -17,6 +17,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	color: var(--primary-color);
+  background-color: var(--light-color);
 	line-height: 1.5;
 }
 
@@ -26,7 +27,6 @@ ul {
 
 a {
 	text-decoration: none;
-	color: #fff;
 }
 
 p {

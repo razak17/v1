@@ -1,18 +1,18 @@
+import styles from '../../styles/Work.module.css';
 import mixins from '../../styles/Mixins.module.css';
+import Icon from '../icons/icon';
+import Image from 'next/image';
+import firstImage from '../../assets/113.png';
 
 const Work = () => {
 	return (
-		<div className={mixins.section_heading}>
-			<div className={mixins.container}>
+		<div className={mixins.container}>
+			<div className={mixins.section_heading}>
 				<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 					Work
 				</h1>
-				<p className={`${mixins.text_center} ${mixins.text_center} ${mixins.m1}`}>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea deleniti
-					voluptatem officiis molestiae nisi unde quasi molestias necessitatibus
-					atque soluta quaerat provident accusamus animi, in sint eveniet
-					exercitationem natus recusandae.
-				</p>
+			</div>
+			<div>
 			</div>
 		</div>
 	);
