@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <section
-      className={`${mixins.container} ${styles.about_section} ${mixins.section_heading}`}
+      className={`${mixins.container} ${mixins.section}`}
     >
       <h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
         About Me

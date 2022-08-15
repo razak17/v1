@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import About from '../components/layout/About';
 import Showcase from '../components/layout/Showcase';
-import Work from '../components/layout/Work';
+import Featured from '../components/layout/Featured';
 import Contact from '../components/layout/Contact';
 
 const Home: NextPage = () => {
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 			<Navbar />
 			<Showcase />
 			<About />
-			<Work />
+			<Featured />
 			<Contact />
 			<Footer />
 		</>

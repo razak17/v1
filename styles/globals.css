@@ -6,6 +6,8 @@
 	--alert-color: #dc2626;
 	--transparent-color: rgba(243, 244, 246, 0.3);
 	--btn-primary-hover: rgba(220, 38, 38, 0.9);
+	--box-shadow: rgba(2, 12, 27, 0.7);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 * {
@@ -17,7 +19,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	color: var(--primary-color);
-  background-color: var(--light-color);
+	background-color: var(--light-color);
 	line-height: 1.5;
 }
 

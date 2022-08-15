@@ -2,7 +2,7 @@ import mixins from '../../styles/Mixins.module.css';
 
 const Contact = () => {
 	return (
-		<section className={mixins.section_heading}>
+		<section className={mixins.section}>
 			<div className={mixins.container}>
 				<h1
 					className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}
