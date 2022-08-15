@@ -6,7 +6,7 @@ import firstImage from '../../assets/113.png';
 
 const Work = () => {
 	return (
-		<div className={mixins.container}>
+		<section className={mixins.container}>
 			<div className={mixins.section_heading}>
 				<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 					Work
@@ -14,7 +14,7 @@ const Work = () => {
 			</div>
 			<div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
