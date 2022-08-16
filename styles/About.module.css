@@ -5,6 +5,19 @@
 	grid-gap: 50px;
 }
 
+.about_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_cta {
+  margin-top: 1rem;
+}
+
+.about_cta a {
+margin: 1rem 1rem 0 0;
+}
+
 .skills_list {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(140px, 200px));

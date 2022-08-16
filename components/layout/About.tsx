@@ -12,9 +12,7 @@ const About = () => {
   ];
 
   return (
-    <section
-      className={`${mixins.container} ${mixins.section}`}
-    >
+    <section className={`${mixins.container} ${mixins.section}`}>
       <h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
         About Me
       </h1>
@@ -29,6 +27,11 @@ const About = () => {
             occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
             officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
           </p>
+          <div className={`${styles.about_cta}`}>
+            <a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
+              Get In touch
+            </a>
+          </div>
         </div>
         <div className={`${styles.tech}`}>
           <p>
