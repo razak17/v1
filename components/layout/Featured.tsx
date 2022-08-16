@@ -27,7 +27,9 @@ const Featured = () => {
 									<Image src={image} alt='' />
 								</div>
 								<div>
-									<h3>{title}</h3>
+									<a href='#'>
+										<h3>{title}</h3>
+									</a>
 									<p>{description}</p>
 									<ul className={`${styles.tech_list}`}>
 										{tech && tech.map((item) => <li key={`project-${item}`}>{item}</li>)}

@@ -1,6 +1,6 @@
 .work_grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
 	grid-gap: 2rem;
 	margin-top: 2rem;
 }
@@ -84,9 +84,6 @@
 
 @media (max-width: 480px) {
 	.image {
-		display: none;
-	}
-	.tech_list {
 		display: none;
 	}
 }
