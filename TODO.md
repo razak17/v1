@@ -5,5 +5,5 @@
 - Find a way to include contact in nav on smaller screens
 - Make Logo clickable
 - Add cta on about section
-
+- tackle spacing for sections
 

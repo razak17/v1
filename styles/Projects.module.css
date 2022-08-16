@@ -1,0 +1,139 @@
+.projects_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects_grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+	grid-gap: 2rem;
+	margin-top: 2rem;
+}
+
+.projects_list {
+	position: relative;
+	cursor: default;
+	transition: var(--transition);
+}
+
+.projects_list a {
+	position: relative;
+	z-index: 1;
+}
+
+.project_inner {
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	height: 100%;
+	padding: 2rem 1.75rem;
+	border-radius: var(--border-radius);
+	background-color: var(--light-color);
+	transition: var(--transition);
+	overflow: auto;
+}
+
+.project_top {
+	margin-bottom: 2.5rem;
+}
+
+.folder {
+	color: var(--primary-color);
+}
+
+.folder svg {
+	width: 40px;
+	height: 40px;
+	color: var(--primary-color);
+}
+
+.project_links {
+	display: flex;
+	align-items: center;
+	margin-right: -10px;
+	color: red;
+}
+
+.project_links a {
+	padding: 5px 7px;
+}
+
+.project_links a .external svg {
+	width: 22px;
+	height: 22px;
+	margin-top: -4px;
+}
+
+.project_links a svg {
+	width: 25px;
+	height: 25px;
+	color: var(--primary-color);
+}
+
+.project_links a:hover {
+	color: var(--alert-color);
+}
+
+.project_title {
+	margin: 0 0 10px;
+	font-size: 24px;
+}
+
+.project_title a {
+	color: var(--primary-color);
+	position: static;
+}
+
+.project_title a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.project_description {
+	font-size: 14px;
+	margin-bottom: 2.5rem;
+}
+
+.project_description a {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: var(--transition);
+}
+
+.project_tech_list {
+	display: flex;
+	align-items: flex-end;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+}
+
+.project_tech_list li {
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.project_tech_list li:not(:last-of-type) {
+	margin-right: 15px;
+}
+
+.more_button {
+	margin: 80px auto 0;
+}
+
+@media (max-width: 1080px) {
+	.projects_grid {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
