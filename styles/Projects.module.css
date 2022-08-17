@@ -130,3 +130,13 @@
 		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	}
 }
+@media (prefers-reduced-motion: no-preference) {
+	.projects_list:hover,
+	.projects_list:focus-within {
+		transform: translatey(-7px);
+	}
+
+	.project-inner:hover {
+		transform: translatey(-7px);
+	}
+}
