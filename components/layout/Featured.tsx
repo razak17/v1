@@ -38,7 +38,7 @@ const Featured = () => {
 									<div className={`${styles.icons}`}>
 										{project.github && (
 											<a href={project.github} target='_blank' rel='noreferrer'>
-												<Icon name='GitHub' />{' '}
+												<Icon name='GitHub' />
 											</a>
 										)}
 										{project.external && (
