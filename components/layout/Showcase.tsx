@@ -11,7 +11,7 @@ const Showcase = () => {
 						I am a full stack software developer. I enjoy writing backends in node and
 						golang. I also enjoy writing automation scripts in python.
 					</p>
-					<a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
+					<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>
 						Get In touch
 					</a>
 				</div>

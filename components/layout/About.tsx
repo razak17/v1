@@ -3,32 +3,36 @@ import mixins from '../../styles/Mixins.module.css';
 
 const About = () => {
 	const skills = [
-		'JavaScript (ES6+)',
+		'JavaScript',
 		'TypeScript',
 		'React',
-		'Eleventy',
 		'Node.js',
-		'WordPress'
+    'Express',
+		'Docker',
+		'Python',
+		'Postgresql',
 	];
 
 	return (
-		<section className={`${mixins.container} ${mixins.section}`}>
+		<section id='about' className={`${mixins.container} ${mixins.section}`}>
 			<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 				About Me
 			</h1>
 			<div className={styles.about_inner}>
 				<div>
 					<p>
-						ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-						labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-						Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-						Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-						Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-						occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-						officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
+            Hello! My name is Razak and I enjoy creating things that live on the internet.
+            I started programming about six years ago in python. I really enjoyed building
+            websites with flask and django. I also enjoyed creating automation and web scraping
+            scripts with my python knowledge.
+            <br />
+            <br />
+            Nowadays, I write backends with node and express. Although I enjoy backend development,
+            I am also a competent frontend developer with react and typescript. I also have
+            experience with docker and postgresql.
 					</p>
 					<div className={`${styles.about_cta}`}>
-						<a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
+						<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>
 							Get In touch
 						</a>
 					</div>

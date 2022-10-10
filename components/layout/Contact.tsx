@@ -24,7 +24,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section className={`${mixins.container} ${mixins.section}`}>
+		<section id='contact' className={`${mixins.container} ${mixins.section}`}>
 			<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 				Contact
 			</h1>
