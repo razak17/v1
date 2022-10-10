@@ -1,36 +1,35 @@
+import { forwardRef } from 'react';
+import { FieldError } from 'react-hook-form';
+
 import styles from '../styles/Mixins.module.css';
 
 interface InputFieldProps {
+	label?: string;
 	type?: string;
-	name: string;
 	placeholder: string;
-	value: string;
 	textArea?: boolean;
-	onChange: (
-		e: React.ChangeEvent<HTMLInputElement> &
-			React.ChangeEvent<HTMLTextAreaElement>
-	) => void;
-	errorMessage?: string;
+	error?: FieldError;
 }
 
-const InputField = (props: InputFieldProps) => {
-	const { onChange, textArea, errorMessage, ...inputProps } = props;
-
-	if (textArea) {
+export const TextArea = forwardRef<HTMLTextAreaElement, InputFieldProps>(
+	function InputField({ error, ...props }, ref) {
 		return (
 			<div className={styles.input100}>
-				<textarea {...inputProps} onChange={onChange}></textarea>
-				<span>{errorMessage}</span>
-			</div>
-		);
-	} else {
-		return (
-			<div className={styles.input100}>
-				<input {...inputProps} onChange={onChange} />
-				<span>{errorMessage}</span>
+				<textarea ref={ref} {...props}></textarea>
+				<span>{error?.message}</span>
 			</div>
 		);
 	}
-};
+);
 
-export default InputField;
+export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
+	function InputField({ type = 'text', error, ...props }, ref) {
+		return (
+			<div className={styles.input100}>
+				<input type={type} ref={ref} {...props} />
+				<span>{error?.message}</span>
+			</div>
+		);
+	}
+);
+

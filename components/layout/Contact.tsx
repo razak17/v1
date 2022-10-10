@@ -1,27 +1,34 @@
-import { useState } from 'react';
 import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
 import Icon, { IconType } from '../icons/icon';
-import InputField from '../InputField';
+import { InputField, TextArea } from '../InputField';
 import { socialMedia } from '../data';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import {
+	ContactFormSchemaType,
+	ContactFormSchema
+} from '../../utils/formSchema';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { sendEmail } from '../../lib/api';
 
 const Contact = () => {
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		message: ''
+	const {
+		register: contactForm,
+		handleSubmit,
+    reset,
+		formState: { errors, isSubmitting }
+	} = useForm<ContactFormSchemaType>({
+		resolver: zodResolver(ContactFormSchema)
 	});
 
-	const handleChangeInput = (
-		e: React.ChangeEvent<HTMLInputElement> &
-			React.ChangeEvent<HTMLTextAreaElement>
-	) => {
-		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
-	};
-
-	const handleSubmit = () => {
-		alert('Hello');
+	const onSubmit: SubmitHandler<ContactFormSchemaType> = async (data) => {
+		console.log({ data });
+		sendEmail({
+			from_name: data.from_name.trim(),
+			message: data.message.trim(),
+			reply_to: data.reply_to.trim()
+		});
+    reset();
 	};
 
 	return (
@@ -37,36 +44,37 @@ const Contact = () => {
 			</div>
 			<div className={`${styles.contact}`}>
 				<div className={`${styles.contact_form} ${mixins.box_shadow}`}>
-					<form onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className={styles.row}>
 							<InputField
+								required
 								type='text'
-								name='name'
 								placeholder='Name'
-								value={formData.name}
-								onChange={handleChangeInput}
+								{...contactForm('from_name')}
+								error={errors.from_name}
 							/>
 						</div>
 						<div className={styles.row}>
 							<InputField
+								required
 								type='email'
-								name='email'
 								placeholder='Email'
-								value={formData.email}
-								onChange={handleChangeInput}
+								{...contactForm('reply_to')}
+								error={errors.reply_to}
 							/>
 						</div>
 						<div className={styles.row}>
-							<InputField
-								name='message'
+							<TextArea
+								required
 								placeholder='Message'
-								value={formData.message}
-								onChange={handleChangeInput}
-								textArea
+								{...contactForm('message')}
+								error={errors.message}
 							/>
 						</div>
 						<div className={`${styles.row}`}>
-							<button className={`${mixins.button_alt}`}>Send Message</button>
+							<button disabled={isSubmitting} className={`${mixins.button_alt}`}>
+								Send Message
+							</button>
 						</div>
 					</form>
 				</div>
@@ -82,7 +90,7 @@ const Contact = () => {
 							<h3>Connect</h3>
 							<ul className={styles.contact_social}>
 								{socialMedia.map((item) => (
-									<li key={`social-${item}`}>
+									<li key={`social-${item.name}`}>
 										<a href={item.url} target='_blank' rel='noreferrer'>
 											<Icon name={item.name as IconType} />
 										</a>
