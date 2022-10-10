@@ -1,7 +1,7 @@
 import styles from '../styles/Footer.module.css';
 import mixins from '../styles/Mixins.module.css';
 import Icon, { IconType } from './icons/icon';
-import {navLinks, footerLinks} from './data';
+import { navLinks, footerLinks } from './data';
 
 const Me = () => {
 	const links = ['GitHub', 'Twitter'];
@@ -11,12 +11,12 @@ const Me = () => {
 			<p className={mixins.text_transparent}>Software Developer</p>
 			<ul className={styles.social_list}>
 				{links.map((item) => (
-						<li key={`social-${item}`}>
-							<a href='#' target='_blank' rel='noreferrer'>
-								<Icon name={item as IconType} />
-							</a>
-						</li>
-					))}
+					<li key={`social-${item}`}>
+						<a href='#' target='_blank' rel='noreferrer'>
+							<Icon name={item as IconType} />
+						</a>
+					</li>
+				))}
 			</ul>
 			<p className={styles.copy_text}>&copy; 2022 Razak Mo</p>
 		</div>

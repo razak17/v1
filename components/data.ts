@@ -1,5 +1,4 @@
 import { StaticImageData } from 'next/image';
-import firstImage from '/assets/113.png';
 import howdyImg from '/assets/howdy.png';
 import ytImg from '/assets/yt.png';
 import tiktikImg from '/assets/tiktik.png';
@@ -14,54 +13,54 @@ type ProjectType = {
 	external?: string;
 };
 
-  export const navLinks = [
-    {
-      name: 'Home',
-      url: '#',
-    },
-    {
-      name: 'About',
-      url: '#about',
-    },
-    {
-      name: 'Projects',
-      url: '#projects',
-    },
-    {
-      name: 'Contact',
-      url: '#contact',
-    },
-  ];
+export const navLinks = [
+	{
+		name: 'Home',
+		url: '#'
+	},
+	{
+		name: 'About',
+		url: '#about'
+	},
+	{
+		name: 'Projects',
+		url: '#projects'
+	},
+	{
+		name: 'Contact',
+		url: '#contact'
+	}
+];
 
-  export const socialMedia = [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/razak17',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/theRazakMo',
-    },
-  ]
+export const socialMedia = [
+	{
+		name: 'GitHub',
+		url: 'https://github.com/razak17'
+	},
+	{
+		name: 'Twitter',
+		url: 'https://twitter.com/theRazakMo'
+	}
+];
 
-  export const footerLinks = [
-    {
-      name: 'Blog',
-      url: 'https://blog.razakmo.me',
-    },
-    {
-      name: 'Projects',
-      url: '#projects',
-    },
-    {
-      name: 'Imprint',
-      url: '#',
-    },
-    {
-      name: 'Privacy Policy',
-      url: '#',
-    },
-  ]
+export const footerLinks = [
+	{
+		name: 'Blog',
+		url: 'https://blog.razakmo.me'
+	},
+	{
+		name: 'Projects',
+		url: '#projects'
+	},
+	{
+		name: 'Imprint',
+		url: '#'
+	},
+	{
+		name: 'Privacy Policy',
+		url: '#'
+	}
+];
 
 export const projects: ProjectType[] = [
 	{
@@ -102,15 +101,7 @@ export const projects: ProjectType[] = [
 		title: 'Tik Tok Clone',
 		description:
 			'A tik tok clone that allows users to upload videos, like, comment on videos and like videos.',
-		tech: [
-			'react',
-			'material UI',
-			'redux',
-			'node',
-			'express',
-			'mongodb',
-			'fireabase'
-		],
+		tech: ['react', 'material UI', 'redux', 'express', 'mongodb', 'fireabase'],
 		image: tiktikImg,
 		github: 'https://github.com/razak17/howdy',
 		external: 'https://tiktik.razakmo.me'

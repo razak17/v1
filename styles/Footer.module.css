@@ -64,7 +64,7 @@
 }
 
 .me > a {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 @media (max-width: 824px) {
