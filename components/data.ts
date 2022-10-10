@@ -14,6 +14,17 @@ type ProjectType = {
 	external?: string;
 };
 
+  export const socialMedia = [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/razak17',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/theRazakMo',
+    },
+  ]
+
 export const projects: ProjectType[] = [
 	{
 		title: 'Howwdy',

@@ -3,6 +3,7 @@ import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
 import Icon, { IconType } from '../icons/icon';
 import InputField from '../InputField';
+import { socialMedia } from '../data';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -73,17 +74,17 @@ const Contact = () => {
 					<div className={styles.info_box}>
 						<div>
 							<h3>Email</h3>
-							<a href='mailto:anyone@example.com'>ecsgh@ecsgh.com</a>
+							<a href='mailto:razakmoapps@gmail.com'>razakmoapps@gmail.com</a>
 						</div>
 					</div>
 					<div className={styles.info_box}>
 						<div>
 							<h3>Connect</h3>
 							<ul className={styles.contact_social}>
-								{['GitHub', 'Twitter', 'Linkedin'].map((item) => (
+								{socialMedia.map((item) => (
 									<li key={`social-${item}`}>
-										<a href='#' target='_blank' rel='noreferrer'>
-											<Icon name={item as IconType} />
+										<a href={item.url} target='_blank' rel='noreferrer'>
+											<Icon name={item.name as IconType} />
 										</a>
 									</li>
 								))}
