@@ -8,8 +8,8 @@ const Showcase = () => {
 				<div>
 					<h1 className={mixins.lg}>Software Developer</h1>
 					<p className={mixins.text_transparent}>
-						Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum
-						sint consectetur cupidatat.
+						I am a full stack software developer. I enjoy writing backends in node and
+						golang. I also enjoy writing automation scripts in python.
 					</p>
 					<a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
 						Get In touch

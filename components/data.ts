@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 import firstImage from '/assets/113.png';
 
 type ProjectType = {

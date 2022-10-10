@@ -17,7 +17,6 @@
 	height: 100%;
 }
 
-
 .footer_link {
 	color: var(--transparent-color);
 	text-transform: capitalize;
@@ -63,7 +62,6 @@
 	color: var(--transparent-color);
 	margin-top: 2rem;
 }
-
 
 @media (max-width: 824px) {
 	.footer_grid {

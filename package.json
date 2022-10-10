@@ -9,7 +9,7 @@
 		"start": "next start",
 		"lint": "eslint_d --ext .js,.ts,.jsx,.tsx pages/",
 		"lint:fix": "eslint_d --ext .js,.ts,.jsx,.tsx pages/ --fix",
-		"format": "prettier --write 'pages/**/*.{js,jsx,ts,tsx,css}' --config ./.prettierrc.json"
+		"format": "prettier --write '*/**/*.{js,jsx,ts,tsx,css}' --config ./.prettierrc.json"
 	},
 	"dependencies": {
 		"next": "12.2.4",

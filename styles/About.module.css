@@ -6,16 +6,16 @@
 }
 
 .about_left {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .about_cta {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .about_cta a {
-margin: 1rem 1rem 0 0;
+	margin: 1rem 1rem 0 0;
 }
 
 .skills_list {

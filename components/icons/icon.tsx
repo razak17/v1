@@ -4,7 +4,12 @@ import IconGitHub from './github';
 import IconLinkedin from './linkedin';
 import IconTwitter from './twitter';
 
-export type IconType = 'GitHub' | 'Twitter' | 'Linkedin' | 'External' | 'Folder';
+export type IconType =
+	| 'GitHub'
+	| 'Twitter'
+	| 'Linkedin'
+	| 'External'
+	| 'Folder';
 
 const Icon = (props: { name: IconType }) => {
 	if (props.name === 'GitHub') return <IconGitHub />;
