@@ -1,21 +1,24 @@
-import styles from '../../styles/Contact.module.css';
-import mixins from '../../styles/Mixins.module.css';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'react-toastify';
+
 import Icon, { IconType } from '../icons/icon';
 import { InputField, TextArea } from '../InputField';
 import { socialMedia } from '../data';
-import { SubmitHandler, useForm } from 'react-hook-form';
 import {
 	ContactFormSchemaType,
 	ContactFormSchema
 } from '../../utils/formSchema';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { sendEmail } from '../../lib/api';
+import styles from '../../styles/Contact.module.css';
+import mixins from '../../styles/Mixins.module.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 	const {
 		register: contactForm,
 		handleSubmit,
-    reset,
+		reset,
 		formState: { errors, isSubmitting }
 	} = useForm<ContactFormSchemaType>({
 		resolver: zodResolver(ContactFormSchema)
@@ -23,12 +26,35 @@ const Contact = () => {
 
 	const onSubmit: SubmitHandler<ContactFormSchemaType> = async (data) => {
 		console.log({ data });
-		sendEmail({
-			from_name: data.from_name.trim(),
-			message: data.message.trim(),
-			reply_to: data.reply_to.trim()
-		});
-    reset();
+
+		const response = await toast.promise(
+			sendEmail({
+				from_name: data.from_name.trim(),
+				message: data.message.trim(),
+				reply_to: data.reply_to.trim()
+			}),
+			{
+				pending: {
+					render() {
+						return 'Sending message...';
+					},
+					icon: false
+				},
+				success: {
+					render() {
+            reset();
+						return 'Message sent successfully!';
+					}
+				},
+				error: {
+					render() {
+						return 'Something went wrong, please try again later.';
+					}
+				}
+			}
+		);
+
+		console.log(response);
 	};
 
 	return (

@@ -7,6 +7,7 @@ import Showcase from '../components/layout/Showcase';
 import Featured from '../components/layout/Featured';
 import Contact from '../components/layout/Contact';
 import Projects from '../components/layout/Projects';
+import { ToastContainer } from 'react-toastify';
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 			{/* <Projects /> */}
 			<Contact />
 			<Footer />
+			<ToastContainer />
 		</>
 	);
 };
