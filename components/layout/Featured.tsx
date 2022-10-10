@@ -20,19 +20,21 @@ const Featured = () => {
 
 			<div className={`${styles.work_grid}`}>
 				{projects &&
-					projects.map(({ title, description, tech, image, ...project }, index) => (
+					projects.map((project, index) => (
 						<div key={index} className={`${styles.work_item}`}>
 							<div className={`${styles.work_frame}`}>
 								<div className={`${styles.image}`}>
-									<Image src={image} alt='' />
+									<Image src={project.image} alt='' />
 								</div>
 								<div>
-									<a href='#'>
-										<h3>{title}</h3>
+									<a href={project.external} target='_blank' rel='noreferrer'>
+										<h3>{project.title}</h3>
 									</a>
-									<p>{description}</p>
+									<p>{project.description}</p>
 									<ul className={`${styles.tech_list}`}>
-										{tech && tech.map((item) => <li key={`project-${item}`}>{item}</li>)}
+										{project.tech.map((item) => (
+											<li key={`project-${item}`}>{item}</li>
+										))}
 									</ul>
 
 									<div className={`${styles.icons}`}>

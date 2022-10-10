@@ -6,7 +6,7 @@
 	--alert-color: #dc2626;
 	--light-navy: #112240;
 	--transparent-color: rgba(243, 244, 246, 0.3);
-	--btn-primary-hover: rgba(220, 38, 38, 0.9);
+	--btn-primary-hover: rgba(180, 38, 38, 0.9);
 	--button-hover: rgba(10, 35, 64, 0.9);
 	--box-shadow: rgba(2, 12, 27, 0.7);
 	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
