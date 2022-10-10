@@ -7,10 +7,10 @@ const About = () => {
 		'TypeScript',
 		'React',
 		'Node.js',
-    'Express',
+		'Express',
 		'Docker',
 		'Python',
-		'Postgresql',
+		'Postgresql'
 	];
 
 	return (
@@ -21,15 +21,15 @@ const About = () => {
 			<div className={styles.about_inner}>
 				<div>
 					<p>
-            Hello! My name is Razak and I enjoy creating things that live on the internet.
-            I started programming about six years ago in python. I really enjoyed building
-            websites with flask and django. I also enjoyed creating automation and web scraping
-            scripts with my python knowledge.
-            <br />
-            <br />
-            Nowadays, I write backends with node and express. Although I enjoy backend development,
-            I am also a competent frontend developer with react and typescript. I also have
-            experience with docker and postgresql.
+						Hello! My name is Razak and I enjoy creating things that live on the
+						internet. I started programming about six years ago in python. I really
+						enjoyed building websites with flask and django. I also enjoyed creating
+						automation and web scraping scripts with my python knowledge.
+						<br />
+						<br />
+						Nowadays, I write backends with node and express. Although I enjoy backend
+						development, I am also a competent frontend developer with react and
+						typescript. I also have experience with docker and postgresql.
 					</p>
 					<div className={`${styles.about_cta}`}>
 						<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>

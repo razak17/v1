@@ -10,7 +10,7 @@ const Navbar = () => {
 				</a>
 				<nav>
 					<ul className={styles.nav_links}>
-						{['home', 'about', 'work', 'blog'].map((item) => (
+						{['home', 'about', 'projects', 'contact'].map((item) => (
 							<li key={`link-${item}`}>
 								<a className={styles.nav_link} href={`#${item}`}>
 									{item}
@@ -19,7 +19,10 @@ const Navbar = () => {
 						))}
 					</ul>
 				</nav>
-				<a href='#contact' className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}>
+				<a
+					href='#contact'
+					className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}
+				>
 					Contact
 				</a>
 			</div>
