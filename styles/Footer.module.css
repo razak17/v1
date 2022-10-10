@@ -63,6 +63,10 @@
 	margin-top: 2rem;
 }
 
+.me > a {
+  cursor: pointer;
+}
+
 @media (max-width: 824px) {
 	.footer_grid {
 		grid-template-columns: repeat(2, 1fr);

@@ -1,16 +1,16 @@
 import styles from '../styles/Footer.module.css';
 import mixins from '../styles/Mixins.module.css';
 import Icon, { IconType } from './icons/icon';
+import {navLinks, footerLinks} from './data';
 
 const Me = () => {
-	const links = ['GitHub', 'Twitter', 'Linkedin'];
+	const links = ['GitHub', 'Twitter'];
 	return (
 		<div>
 			<h2>Razak Mo</h2>
 			<p className={mixins.text_transparent}>Software Developer</p>
 			<ul className={styles.social_list}>
-				{links &&
-					links.map((item) => (
+				{links.map((item) => (
 						<li key={`social-${item}`}>
 							<a href='#' target='_blank' rel='noreferrer'>
 								<Icon name={item as IconType} />
@@ -27,10 +27,10 @@ const Pages = () => (
 	<div>
 		<h3>Pages</h3>
 		<ul>
-			{['home', 'about', 'work', 'blog'].map((item) => (
-				<li className={styles.footer_item} key={`link-${item}`}>
-					<a className={styles.footer_link} href={`#${item}`}>
-						{item}
+			{navLinks.map((item) => (
+				<li className={styles.footer_item} key={`link-${item.name}`}>
+					<a className={styles.footer_link} href={item.url}>
+						{item.name}
 					</a>
 				</li>
 			))}
@@ -42,10 +42,10 @@ const QuickLinks = () => (
 	<div>
 		<h3>Quick Links</h3>
 		<ul>
-			{['blog', 'projects', 'imprint', 'privacy policy'].map((item) => (
-				<li className={styles.footer_item} key={`link-${item}`}>
-					<a className={styles.footer_link} href='#'>
-						{item}
+			{footerLinks.map((item) => (
+				<li className={styles.footer_item} key={`link-${item.name}`}>
+					<a className={styles.footer_link} href={item.url}>
+						{item.name}
 					</a>
 				</li>
 			))}
@@ -59,7 +59,7 @@ const Contact = () => (
 		<p className={`${mixins.text_transparent} ${styles.contact_text}`}>
 			Are you interested in working together?
 		</p>
-		<a href='#' className={`${mixins.btn} ${mixins.btn_cta}`}>
+		<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>
 			Get In touch
 		</a>
 	</div>
