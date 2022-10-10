@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://razakmo.me
+
+# Sitemaps
+Sitemap: https://razakmo.me/sitemap.xml
