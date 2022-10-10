@@ -1,3 +1,4 @@
+import { navLinks } from './data';
 import styles from '../styles/Navbar.module.css';
 import mixins from '../styles/Mixins.module.css';
 
@@ -10,10 +11,10 @@ const Navbar = () => {
 				</a>
 				<nav>
 					<ul className={styles.nav_links}>
-						{['home', 'about', 'projects', 'contact'].map((item) => (
-							<li key={`link-${item}`}>
-								<a className={styles.nav_link} href={`#${item}`}>
-									{item}
+						{navLinks.map((item) => (
+							<li key={`link-${item.name}`}>
+								<a className={styles.nav_link} href={item.url}>
+									{item.name}
 								</a>
 							</li>
 						))}
