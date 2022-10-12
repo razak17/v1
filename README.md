@@ -1,4 +1,4 @@
-## Personal portfolio website buit with [Next.js](https://nextjs.org/)
+## Personal portfolio website built with [Next.js](https://nextjs.org/)
 ![screenshot](https://user-images.githubusercontent.com/52210954/194862439-55efd2e6-f60b-4fad-b6b3-41e46806e6c7.png)
 ## Getting Started
 
