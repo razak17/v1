@@ -24,8 +24,8 @@ Note: I am using emailjs for the contact form.
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 ## TODO
-- Sticky Nav
-- Other Noteworthy Projects
+-   [x]  Sticky Nav
+-   [ ]  Other Noteworthy Projects Section
 
 ## Resources and inspiration
 - [Brittany Chiang](https://brittanychiang.com)
