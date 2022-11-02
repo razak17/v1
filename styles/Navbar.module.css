@@ -43,6 +43,7 @@
 @media (max-width: 658px) {
 	.navbar {
 		height: 110px;
+	  position: relative;
 	}
 
 	.nav_flex {
