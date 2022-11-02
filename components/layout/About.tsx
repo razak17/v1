@@ -1,18 +1,8 @@
 import styles from '../../styles/About.module.css';
 import mixins from '../../styles/Mixins.module.css';
+import { skills } from '../data';
 
 const About = () => {
-	const skills = [
-		'JavaScript',
-		'TypeScript',
-		'React',
-		'Node.js',
-		'Express',
-		'Docker',
-		'Python',
-		'Postgresql'
-	];
-
 	return (
 		<section id='about' className={`${mixins.container} ${mixins.section}`}>
 			<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
@@ -38,9 +28,7 @@ const About = () => {
 					</div>
 				</div>
 				<div className={`${styles.tech}`}>
-					<p>
-						Listed below are some of the technologies I currently work with:
-					</p>
+					<p>Listed below are some of the technologies I currently work with:</p>
 					<ul className={`${styles.skills_list}`}>
 						{skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
 					</ul>

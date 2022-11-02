@@ -13,6 +13,17 @@ type ProjectType = {
 	external?: string;
 };
 
+export const skills = [
+	'JavaScript',
+	'TypeScript',
+	'React',
+	'Node.js',
+	'Express',
+	'Docker',
+	'Python',
+	'Postgresql'
+];
+
 export const navLinks = [
 	{
 		name: 'Home',
@@ -86,7 +97,7 @@ export const projects: ProjectType[] = [
 			'Basically a youtube clone. Users can upload videos, like, dislike, comment on videos and subscribe to channels.',
 		tech: [
 			'react',
-      'node',
+			'node',
 			'material UI',
 			'styled components',
 			'express',
