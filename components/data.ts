@@ -86,11 +86,10 @@ export const projects: ProjectType[] = [
 			'Basically a youtube clone. Users can upload videos, like, dislike, comment on videos and subscribe to channels.',
 		tech: [
 			'react',
+      'node',
 			'material UI',
-			'react query',
 			'styled components',
 			'express',
-			'mongodb',
 			'firebase'
 		],
 		image: ytImg,
