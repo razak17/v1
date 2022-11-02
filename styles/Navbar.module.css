@@ -58,7 +58,7 @@
 		padding: 0.8rem;
 	}
 
-	.cta {
+	.nav_flex .cta {
 		display: none;
 	}
 }
