@@ -39,8 +39,7 @@ const About = () => {
 				</div>
 				<div className={`${styles.tech}`}>
 					<p>
-						Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum
-						sint consectetur cupidatat.
+						Listed below are some of the technologies I currently work with:
 					</p>
 					<ul className={`${styles.skills_list}`}>
 						{skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
