@@ -6,7 +6,7 @@ const Showcase = () => {
 		<div className={styles.showcase}>
 			<div className={`${mixins.container} ${styles.showcase_grid}`}>
 				<div>
-					<h1 className={mixins.lg}>Software Developer</h1>
+					<h1 className={mixins.lg}>Full Stack Software Developer</h1>
 					<p className={mixins.text_transparent}>
 						I am a full stack software developer. I enjoy writing backends in node and
 						golang. I also enjoy writing automation scripts in python.
