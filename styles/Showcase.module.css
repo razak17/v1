@@ -1,5 +1,5 @@
 .showcase {
-	height: 450px;
+	height: calc(100vh - 160px);
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
@@ -39,6 +39,9 @@
 }
 
 @media (max-width: 768px) {
+  .showcase {
+    height: 500px;
+  }
 	.showcase_grid {
 		grid-template-columns: 75% auto;
 	}
