@@ -4,7 +4,7 @@ import mixins from '../styles/Mixins.module.css';
 import { useState } from 'react';
 
 const Navbar = () => {
-	const [currentLink, setCurrentLink] = useState('#');
+	const [activeLink, setActiveLink] = useState('#');
 
 	return (
 		<header className={styles.navbar}>
@@ -15,10 +15,10 @@ const Navbar = () => {
 				<nav>
 					<ul className={styles.nav_links}>
 						{navLinks.map((item) => (
-							<li key={`link-${item.name}`} onClick={() => setCurrentLink(item.url)}>
+							<li key={`link-${item.name}`} onClick={() => setActiveLink(item.url)}>
 								<a
 									className={
-										currentLink === item.url
+										activeLink === item.url
 											? `${styles.nav_link} ${styles.active}`
 											: `${styles.nav_link}`
 									}
@@ -32,7 +32,7 @@ const Navbar = () => {
 				</nav>
 				<a
 					href='#contact'
-					onClick={() => setCurrentLink('#contact')}
+					onClick={() => setActiveLink('#contact')}
 					className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}
 				>
 					Contact
