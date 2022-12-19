@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [currentLink, setCurrentLink] = useState('');
 
 	return (
-		<div className={styles.navbar}>
+		<header className={styles.navbar}>
 			<div className={`${mixins.container} ${styles.nav_flex}`}>
 				<a href='#'>
 					<h1 className={styles.logo}>Razak Mo.</h1>
@@ -38,7 +38,7 @@ const Navbar = () => {
 					Contact
 				</a>
 			</div>
-		</div>
+		</header>
 	);
 };
 
