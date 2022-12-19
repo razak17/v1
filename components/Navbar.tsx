@@ -4,7 +4,7 @@ import mixins from '../styles/Mixins.module.css';
 import { useState } from 'react';
 
 const Navbar = () => {
-	const [currentLink, setCurrentLink] = useState('');
+	const [currentLink, setCurrentLink] = useState('#');
 
 	return (
 		<header className={styles.navbar}>
