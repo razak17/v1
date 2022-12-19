@@ -12,7 +12,7 @@ import {
 import { sendEmail } from '../../lib/api';
 import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 	const {
@@ -42,7 +42,7 @@ const Contact = () => {
 				},
 				success: {
 					render() {
-            reset();
+						reset();
 						return 'Message sent successfully!';
 					}
 				},

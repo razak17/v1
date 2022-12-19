@@ -32,7 +32,7 @@ const Navbar = () => {
 				</nav>
 				<a
 					href='#contact'
-          onClick={() => setCurrentLink('#contact')}
+					onClick={() => setCurrentLink('#contact')}
 					className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}
 				>
 					Contact
