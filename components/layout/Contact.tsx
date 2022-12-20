@@ -63,7 +63,7 @@ const Contact = () => {
 				Contact
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
-				<p>
+				<p className={`${mixins.lead}`}>
 					Whether you&apos;d like to work together, or just have a chat. Don&apos;t
 					hesistate to get in touch
 				</p>

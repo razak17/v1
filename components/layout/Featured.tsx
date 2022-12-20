@@ -12,7 +12,7 @@ const Featured = () => {
 				Featured Projects
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
-				<p>
+				<p className={`${mixins.lead}`}>
 					Here are some of my work that I&apos;ve done in various programming
 					languages.
 				</p>
