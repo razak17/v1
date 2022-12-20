@@ -8,7 +8,6 @@ import About from '../components/layout/About';
 import Showcase from '../components/layout/Showcase';
 import Featured from '../components/layout/Featured';
 import Contact from '../components/layout/Contact';
-import Projects from '../components/layout/Projects';
 
 const Home: NextPage = () => {
 	return (
@@ -18,7 +17,6 @@ const Home: NextPage = () => {
 			<Showcase />
 			<About />
 			<Featured />
-			{/* <Projects /> */}
 			<Contact />
 			<Footer />
 			<ToastContainer />
