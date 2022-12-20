@@ -67,14 +67,14 @@ const Contact = () => (
 
 const Footer = () => {
 	return (
-		<div className={`${mixins.bg_primary} ${styles.container}`}>
+		<footer className={`${mixins.bg_primary} ${styles.container}`}>
 			<div className={`${mixins.container} ${styles.footer_grid}`}>
 				<Me />
 				<Pages />
 				<QuickLinks />
 				<Contact />
 			</div>
-		</div>
+		</footer>
 	);
 };
 
