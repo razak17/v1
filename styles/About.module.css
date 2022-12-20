@@ -1,6 +1,10 @@
+.container {
+	padding-top: 52px;
+}
+
 .about_inner {
 	display: grid;
-	margin: 3rem 0 0 0;
+	margin: 2rem 0 0 0;
 	grid-template-columns: 4fr 3fr;
 	grid-gap: 3rem;
 }

@@ -4,10 +4,15 @@ import { skills } from '../data';
 
 const About = () => {
 	return (
-		<section id='about' className={`${mixins.container} ${mixins.section}`}>
+		<section id='about' className={`${mixins.container} ${styles.container}`}>
 			<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 				About Me
 			</h1>
+			<div className={`${mixins.text_center} ${mixins.m1} ${mixins.lead}`}>
+				<p className={`${mixins.lead}`}>
+					A little about myself and my capabilities
+				</p>
+			</div>
 			<div className={styles.about_inner}>
 				<div>
 					<p>
