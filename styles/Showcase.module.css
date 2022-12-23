@@ -39,9 +39,9 @@
 }
 
 @media (max-width: 768px) {
-  .showcase {
-    height: 500px;
-  }
+  // .showcase {
+   // height: 500px;
+  // }
 	.showcase_grid {
 		grid-template-columns: 75% auto;
 	}
