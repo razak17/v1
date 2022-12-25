@@ -4,7 +4,7 @@ import { skills } from '../data';
 
 const About = () => {
 	return (
-		<section id='about' className={`${mixins.container} ${styles.container}`}>
+		<section id='about' className={`${mixins.container} ${mixins.section}`}>
 			<h1 className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}>
 				About Me
 			</h1>

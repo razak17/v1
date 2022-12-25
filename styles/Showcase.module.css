@@ -1,5 +1,5 @@
 .showcase {
-	height: calc(100vh - 160px);
+	height: calc(100vh - 180px);
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
