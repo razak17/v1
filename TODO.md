@@ -6,7 +6,9 @@
 - Sticky navbar
 - Add cta about section (and maybe projects too)
 - Add blog section (3 blogs max. Links to blog site)
+
 ## Done:
-✅ name next-sitemap config file correctly
-✅ Custom button component (for footer)
-✅ Make Logo clickable
+
+- [x] name next-sitemap config file correctly
+- [x] Custom button component (for footer)
+- [x] Make Logo clickable
