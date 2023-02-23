@@ -89,7 +89,7 @@ export const projects: ProjectType[] = [
 		],
 		image: howdyImg,
 		github: 'https://github.com/razak17/howdy-ui',
-		external: 'https://howwdy.razakmo.me'
+		external: 'https://howwwdy-ui.vercel.app'
 	},
 	{
 		title: 'Video sharing platform',
@@ -105,7 +105,7 @@ export const projects: ProjectType[] = [
 		],
 		image: ytImg,
 		github: 'https://github.com/razak17/youtube-clone-frontend',
-		external: 'https://youtube.razakmo.me'
+		external: 'https://yt-clone-v1.vercel.app'
 	},
 	{
 		title: 'Tik Tok Clone',
@@ -114,7 +114,7 @@ export const projects: ProjectType[] = [
 		tech: ['react', 'material UI', 'redux', 'express', 'mongodb', 'fireabase'],
 		image: tiktikImg,
 		github: 'https://github.com/razak17/howdy',
-		external: 'https://tiktik.razakmo.me'
+		external: 'https://tiktik-ui.vercel.app'
 	},
 	{
 		title: 'Algorithm Visualizer',
@@ -123,6 +123,6 @@ export const projects: ProjectType[] = [
 		tech: ['react', 'tailwind'],
 		image: algovisualImg,
 		github: 'https://github.com/razak17/algo-visualizer',
-		external: 'https://algo-visualizer.razakmo.me'
+		external: 'https://algo-visualizer-razakmo.vercel.app'
 	}
 ];
