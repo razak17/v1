@@ -12,3 +12,4 @@
 - [x] name next-sitemap config file correctly
 - [x] Custom button component (for footer)
 - [x] Make Logo clickable
+- [ ] Fix site map to use new url
