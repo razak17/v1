@@ -7,9 +7,10 @@ import { InputField, TextArea } from '../InputField';
 import { socialMedia } from '../data';
 import {
 	ContactFormSchemaType,
-	ContactFormSchema
-} from '../../utils/formSchema';
-import { sendEmail } from '../../lib/api';
+	ContactFormSchema,
+	sendEmail
+} from '../../utils/sendEmail';
+
 import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
 import 'react-toastify/dist/ReactToastify.css';
