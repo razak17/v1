@@ -64,12 +64,12 @@ const Contact = () => {
 				Contact
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
-				<p className={`${mixins.lead}`}>
+				<p className={mixins.lead}>
 					Whether you&apos;d like to work together, or just have a chat. Don&apos;t
 					hesistate to get in touch
 				</p>
 			</div>
-			<div className={`${styles.contact}`}>
+			<div className={styles.contact}>
 				<div className={`${styles.contact_form} ${mixins.box_shadow}`}>
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className={styles.row}>
@@ -98,8 +98,8 @@ const Contact = () => {
 								error={errors.message}
 							/>
 						</div>
-						<div className={`${styles.row}`}>
-							<button disabled={isSubmitting} className={`${mixins.button_alt}`}>
+						<div className={styles.row}>
+							<button disabled={isSubmitting} className={mixins.button_alt}>
 								Send Message
 							</button>
 						</div>

@@ -19,25 +19,25 @@ const Projects = () => {
 				Other Noteworthy Projects
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
-				<p className={`${mixins.lead}`}>
+				<p className={mixins.lead}>
 					Here are some of my work that I&apos;ve done in various programming
 					languages.
 				</p>
 			</div>
-			<ul className={`${styles.projects_grid}`}>
+			<ul className={styles.projects_grid}>
 				{projects &&
 					projects.map((project, index) => (
-						<li key={`project-${index}`} className={`${styles.projects_list}`}>
+						<li key={`project-${index}`} className={styles.projects_list}>
 							<div
 								className={`${styles.projects_inner} ${mixins.box_shadow} ${mixins.flex_between}`}
 							>
-								<div className={`${styles.project_inner}`}>
+								<div className={styles.project_inner}>
 									<header>
 										<div className={`${styles.project_top} ${mixins.flex_between}`}>
-											<div className={`${styles.folder}`}>
+											<div className={styles.folder}>
 												<Icon name='Folder' />
 											</div>
-											<div className={`${styles.project_links}`}>
+											<div className={styles.project_links}>
 												{github && (
 													<a
 														href={github}
@@ -52,7 +52,7 @@ const Projects = () => {
 													<a
 														href={external}
 														aria-label='External Link'
-														className={`${styles.external}`}
+														className={styles.external}
 														target='_blank'
 														rel='noreferrer'
 													>
@@ -62,13 +62,13 @@ const Projects = () => {
 											</div>
 										</div>
 
-										<h3 className={`${styles.project_title}`}>
+										<h3 className={styles.project_title}>
 											<a href={external} target='_blank' rel='noreferrer'>
 												Lorem ipsum dolor sit amet, qui minim labore
 											</a>
 										</h3>
 
-										<div className={`${styles.project_description}`}>
+										<div className={styles.project_description}>
 											<p>
 												Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
 												cillum sint consectetur cupidatat.
@@ -77,7 +77,7 @@ const Projects = () => {
 									</header>
 									<footer>
 										{tech && (
-											<ul className={`${styles.project_tech_list}`}>
+											<ul className={styles.project_tech_list}>
 												{tech.map((tech, i) => (
 													<li key={i}>{tech}</li>
 												))}

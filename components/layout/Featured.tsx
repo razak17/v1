@@ -12,18 +12,18 @@ const Featured = () => {
 				Featured Projects
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
-				<p className={`${mixins.lead}`}>
+				<p className={mixins.lead}>
 					Here are some of my work that I&apos;ve done in various programming
 					languages.
 				</p>
 			</div>
 
-			<div className={`${styles.work_grid}`}>
+			<div className={styles.work_grid}>
 				{projects &&
 					projects.map((project, index) => (
-						<div key={index} className={`${styles.work_item}`}>
-							<div className={`${styles.work_frame}`}>
-								<div className={`${styles.image}`}>
+						<div key={index} className={styles.work_item}>
+							<div className={styles.work_frame}>
+								<div className={styles.image}>
 									<Image src={project.image} alt='' />
 								</div>
 								<div>
@@ -31,23 +31,26 @@ const Featured = () => {
 										<h3>{project.title}</h3>
 									</a>
 									<p>{project.description}</p>
-									<ul className={`${styles.tech_list}`}>
-										{project.tech.map((item) => (
-											<li key={`project-${item}`}>{item}</li>
-										))}
-									</ul>
 
-									<div className={`${styles.icons}`}>
-										{project.github && (
-											<a href={project.github} target='_blank' rel='noreferrer'>
-												<Icon name='GitHub' />
-											</a>
-										)}
-										{project.external && (
-											<a href={project.external} target='_blank' rel='noreferrer'>
-												<Icon name='External' />
-											</a>
-										)}
+									<div className={styles.work_footer}>
+										<ul className={styles.tech_list}>
+											{project.tech.map((item) => (
+												<li key={`project-${item}`}>{item}</li>
+											))}
+										</ul>
+
+										<div className={styles.icons}>
+											{project.github && (
+												<a href={project.github} target='_blank' rel='noreferrer'>
+													<Icon name='GitHub' />
+												</a>
+											)}
+											{project.external && (
+												<a href={project.external} target='_blank' rel='noreferrer'>
+													<Icon name='External' />
+												</a>
+											)}
+										</div>
 									</div>
 								</div>
 							</div>

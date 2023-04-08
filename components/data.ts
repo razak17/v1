@@ -111,7 +111,7 @@ export const projects: ProjectType[] = [
 		title: 'Tik Tok Clone',
 		description:
 			'A tik tok clone that allows users to upload videos, like, comment on videos and like videos.',
-		tech: ['react', 'material UI', 'redux', 'express', 'mongodb', 'fireabase'],
+		tech: ['react', 'redux', 'express', 'mongodb', 'fireabase'],
 		image: tiktikImg,
 		github: 'https://github.com/razak17/howdy',
 		external: 'https://tiktik-ui.vercel.app'
@@ -120,7 +120,7 @@ export const projects: ProjectType[] = [
 		title: 'Algorithm Visualizer',
 		description:
 			'Visualize sorting algorithms like bubble sort, merge sort, quick sort, and more. See how they work step by step.',
-		tech: ['react', 'tailwind'],
+		tech: ['react', 'tailwind', 'algorithms'],
 		image: algovisualImg,
 		github: 'https://github.com/razak17/algo-visualizer',
 		external: 'https://algo-visualizer-razakmo.vercel.app'

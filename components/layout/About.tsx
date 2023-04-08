@@ -9,7 +9,7 @@ const About = () => {
 				About Me
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1} ${mixins.lead}`}>
-				<p className={`${mixins.lead}`}>
+				<p className={mixins.lead}>
 					A little about myself and my capabilities
 				</p>
 			</div>
@@ -26,15 +26,15 @@ const About = () => {
 						development, I am also a competent frontend developer with react and
 						typescript. I also have experience with docker and postgresql.
 					</p>
-					<div className={`${styles.about_cta}`}>
+					<div className={styles.about_cta}>
 						<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>
 							Get In touch
 						</a>
 					</div>
 				</div>
-				<div className={`${styles.tech}`}>
+				<div className={styles.tech}>
 					<p>Listed below are some of the technologies I currently work with:</p>
-					<ul className={`${styles.skills_list}`}>
+					<ul className={styles.skills_list}>
 						{skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
 					</ul>
 				</div>
