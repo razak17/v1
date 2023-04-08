@@ -8,12 +8,12 @@ const Navbar = () => {
 
 	return (
 		<header className={styles.navbar}>
-			<div className={`${mixins.container} ${styles.nav_flex}`}>
+			<div className={`${styles.nav_flex}`}>
 				<a href='#'>
 					<h1 className={styles.logo}>Razak Mo.</h1>
 				</a>
-				<nav>
-					<ul className={styles.nav_links}>
+				<nav className={styles.nav_links}>
+					<ul>
 						{navLinks.map((item) => (
 							<li key={`link-${item.name}`} onClick={() => setActiveLink(item.url)}>
 								<a

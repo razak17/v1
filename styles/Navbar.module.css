@@ -16,6 +16,12 @@
 }
 
 .nav_links {
+	align-items: center;
+	justify-content: center;
+  overflow-x: scroll;
+}
+
+.nav_links ul {
 	display: flex;
 }
 
