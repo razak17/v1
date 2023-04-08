@@ -8,7 +8,7 @@ const Navbar = () => {
 
 	return (
 		<header className={styles.navbar}>
-			<div className={`${styles.nav_flex}`}>
+			<div className={`${mixins.container} ${styles.nav_flex}`}>
 				<a href='#'>
 					<h1 className={styles.logo}>Razak Mo.</h1>
 				</a>
