@@ -43,3 +43,20 @@
 		grid-template-columns: 75% auto;
 	}
 }
+
+@media (max-width: 500px) {
+.showcase {
+	height: calc(100vh - 140px);
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.showcase p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+}

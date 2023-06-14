@@ -1,9 +1,9 @@
 {
+	"$schema": "https://json.schemastore.org/eslintrc",
+	"root": true,
+	"parser": "@typescript-eslint/parser",
 	"extends": ["next", "next/core-web-vitals", "eslint:recommended", "prettier"],
-	"globals": {
-		"React": "readonly"
-	},
-	"plugins": ["react", "@typescript-eslint"],
+	"plugins": ["@typescript-eslint"],
 	"overrides": [
 		{
 			"files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
