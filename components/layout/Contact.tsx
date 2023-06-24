@@ -8,7 +8,7 @@ import { socialMedia } from '../data';
 import {
 	ContactFormSchemaType,
 	ContactFormSchema,
-	sendEmail
+	sendEmail,
 } from '../../utils/sendEmail';
 
 import styles from '../../styles/Contact.module.css';
@@ -20,9 +20,9 @@ const Contact = () => {
 		register: contactForm,
 		handleSubmit,
 		reset,
-		formState: { errors, isSubmitting }
+		formState: { errors, isSubmitting },
 	} = useForm<ContactFormSchemaType>({
-		resolver: zodResolver(ContactFormSchema)
+		resolver: zodResolver(ContactFormSchema),
 	});
 
 	const onSubmit: SubmitHandler<ContactFormSchemaType> = async (data) => {
@@ -32,26 +32,26 @@ const Contact = () => {
 			sendEmail({
 				from_name: data.from_name.trim(),
 				message: data.message.trim(),
-				reply_to: data.reply_to.trim()
+				reply_to: data.reply_to.trim(),
 			}),
 			{
 				pending: {
 					render() {
 						return 'Sending message...';
 					},
-					icon: false
+					icon: false,
 				},
 				success: {
 					render() {
 						reset();
 						return 'Message sent successfully!';
-					}
+					},
 				},
 				error: {
 					render() {
 						return 'Something went wrong, please try again later.';
-					}
-				}
+					},
+				},
 			}
 		);
 

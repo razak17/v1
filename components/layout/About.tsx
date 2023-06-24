@@ -9,9 +9,7 @@ const About = () => {
 				About Me
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1} ${mixins.lead}`}>
-				<p className={mixins.lead}>
-					A little about myself and my capabilities
-				</p>
+				<p className={mixins.lead}>A little about myself and my capabilities</p>
 			</div>
 			<div className={styles.about_inner}>
 				<div>

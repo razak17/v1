@@ -21,56 +21,56 @@ export const skills = [
 	'Express',
 	'Docker',
 	'Python',
-	'Postgresql'
+	'Postgresql',
 ];
 
 export const navLinks = [
 	{
 		name: 'Home',
-		url: '#'
+		url: '#',
 	},
 	{
 		name: 'About',
-		url: '#about'
+		url: '#about',
 	},
 	{
 		name: 'Projects',
-		url: '#projects'
+		url: '#projects',
 	},
 	{
 		name: 'Contact',
-		url: '#contact'
-	}
+		url: '#contact',
+	},
 ];
 
 export const socialMedia = [
 	{
 		name: 'GitHub',
-		url: 'https://github.com/razak17'
+		url: 'https://github.com/razak17',
 	},
 	{
 		name: 'Twitter',
-		url: 'https://twitter.com/theRazakMo'
-	}
+		url: 'https://twitter.com/theRazakMo',
+	},
 ];
 
 export const footerLinks = [
 	{
 		name: 'Blog',
-		url: 'https://blog.razakmo.me'
+		url: 'https://blog.razakmo.me',
 	},
 	{
 		name: 'Projects',
-		url: '#projects'
+		url: '#projects',
 	},
 	{
 		name: 'Imprint',
-		url: '#'
+		url: '#',
 	},
 	{
 		name: 'Privacy Policy',
-		url: '#'
-	}
+		url: '#',
+	},
 ];
 
 export const projects: ProjectType[] = [
@@ -85,11 +85,11 @@ export const projects: ProjectType[] = [
 			'node',
 			'express',
 			'mongodb',
-			'firebase'
+			'firebase',
 		],
 		image: howdyImg,
 		github: 'https://github.com/razak17/howdy-ui',
-		external: 'https://howwwdy-ui.vercel.app'
+		external: 'https://howwwdy-ui.vercel.app',
 	},
 	{
 		title: 'Video sharing platform',
@@ -101,11 +101,11 @@ export const projects: ProjectType[] = [
 			'material UI',
 			'styled components',
 			'express',
-			'firebase'
+			'firebase',
 		],
 		image: ytImg,
 		github: 'https://github.com/razak17/youtube-clone-frontend',
-		external: 'https://yt-clone-v1.vercel.app'
+		external: 'https://yt-clone-v1.vercel.app',
 	},
 	{
 		title: 'Tik Tok Clone',
@@ -114,7 +114,7 @@ export const projects: ProjectType[] = [
 		tech: ['react', 'redux', 'express', 'mongodb', 'fireabase'],
 		image: tiktikImg,
 		github: 'https://github.com/razak17/howdy',
-		external: 'https://tiktik-ui.vercel.app'
+		external: 'https://tiktik-ui.vercel.app',
 	},
 	{
 		title: 'Algorithm Visualizer',
@@ -123,6 +123,6 @@ export const projects: ProjectType[] = [
 		tech: ['react', 'tailwind', 'algorithms'],
 		image: algovisualImg,
 		github: 'https://github.com/razak17/algo-visualizer',
-		external: 'https://algo-visualizer-razakmo.vercel.app'
-	}
+		external: 'https://algo-visualizer-razakmo.vercel.app',
+	},
 ];
