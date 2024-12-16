@@ -22,7 +22,7 @@ const Featured = () => {
 				{projects &&
 					projects.map((project, index) => (
 						<div key={index} className={styles.work_item}>
-							<div className={styles.work_frame}>
+							<div className={`${styles.work_frame} ${mixins.box_shadow}`}>
 								<div className={styles.image}>
 									<Image src={project.image} alt='' />
 								</div>
