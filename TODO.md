@@ -12,4 +12,10 @@
 - [x] name next-sitemap config file correctly
 - [x] Custom button component (for footer)
 - [x] Make Logo clickable
-- [ ] Fix site map to use new url
+- [x] Fix site map to use new url
+- [ ] Switch to react email
+- [ ] Update features projects
+- [ ] Add experience
+- [ ] Footer cleanup
+- [ ] Nav active indicator
+- [ ] Use tailwind?
