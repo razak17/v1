@@ -1,19 +1,21 @@
-import { SubmitHandler, useForm } from 'react-hook-form';
+'use client';
+
 import { zodResolver } from '@hookform/resolvers/zod';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
-import Icon, { IconType } from '../icons/icon';
-import { InputField, TextArea } from '../InputField';
-import { socialMedia } from '../data';
 import {
-	ContactFormSchemaType,
 	ContactFormSchema,
+	ContactFormSchemaType,
 	sendEmail,
 } from '../../utils/sendEmail';
+import { socialMedia } from '../data';
+import Icon, { IconType } from '../icons/icon';
+import { InputField, TextArea } from '../InputField';
 
+import 'react-toastify/dist/ReactToastify.css';
 import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 	const {

@@ -1,3 +1,5 @@
+'use client';
+
 import { navLinks } from './data';
 import styles from '../styles/Navbar.module.css';
 import mixins from '../styles/Mixins.module.css';

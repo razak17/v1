@@ -1,8 +1,8 @@
-import Icon from '../icons/icon';
 import { projects } from '../data';
+import Icon from '../icons/icon';
 
-import styles from '../../styles/Projects.module.css';
 import mixins from '../../styles/Mixins.module.css';
+import styles from '../../styles/Projects.module.css';
 
 const Projects = () => {
 	const github = 'https://github.com';

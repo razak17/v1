@@ -1,6 +1,8 @@
-import styles from '../../styles/Showcase.module.css';
+'use client';
+
+import { useEffect, useState } from 'react';
 import mixins from '../../styles/Mixins.module.css';
-import { useState, useEffect } from 'react';
+import styles from '../../styles/Showcase.module.css';
 
 const Showcase = () => {
 	const [windowWidth, setWindowWidth] = useState(0);

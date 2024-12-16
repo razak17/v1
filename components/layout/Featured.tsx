@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Icon from '../icons/icon';
 import { projects } from '../data';
+import Icon from '../icons/icon';
 
 import styles from '../../styles/Featured.module.css';
 import mixins from '../../styles/Mixins.module.css';

@@ -1,7 +1,7 @@
 import styles from '../styles/Footer.module.css';
 import mixins from '../styles/Mixins.module.css';
+import { footerLinks, navLinks, socialMedia } from './data';
 import Icon, { IconType } from './icons/icon';
-import { navLinks, footerLinks, socialMedia } from './data';
 
 const Footer = () => {
 	return (
@@ -12,7 +12,7 @@ const Footer = () => {
 					<p className={mixins.text_transparent}>Software Developer</p>
 					<ul className={styles.social_list}>
 						{socialMedia.map((item) => (
-							<li key={`social-${item}`}>
+							<li key={`<social-${item.name}`}>
 								<a href={item.url} target='_blank' rel='noreferrer'>
 									<Icon name={item.name as IconType} />
 								</a>
