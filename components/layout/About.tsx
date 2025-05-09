@@ -14,7 +14,7 @@ const About = () => {
 			<div className={styles.about_inner}>
 				<div>
 					<p>
-            Hello! My name is Razak. I'm a versatile software engineer with diverse
+            Hello! My name is Razak. I&apos;m a versatile software engineer with diverse
             experience designing and building both frontend and backend systems.
             Over the years, I have built robust frontends, developed REST APIs and
             designed database systems for various applications.
