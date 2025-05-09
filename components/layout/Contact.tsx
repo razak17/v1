@@ -72,41 +72,41 @@ const Contact = () => {
 				</p>
 			</div>
 			<div className={styles.contact}>
-				<div className={`${styles.contact_form} ${mixins.box_shadow}`}>
-					<form onSubmit={handleSubmit(onSubmit)}>
-						<div className={styles.row}>
-							<InputField
-								required
-								type='text'
-								placeholder='Name'
-								{...contactForm('from_name')}
-								error={errors.from_name}
-							/>
-						</div>
-						<div className={styles.row}>
-							<InputField
-								required
-								type='email'
-								placeholder='Email'
-								{...contactForm('reply_to')}
-								error={errors.reply_to}
-							/>
-						</div>
-						<div className={styles.row}>
-							<TextArea
-								required
-								placeholder='Message'
-								{...contactForm('message')}
-								error={errors.message}
-							/>
-						</div>
-						<div className={styles.row}>
-							<button disabled={isSubmitting} className={mixins.button_alt}>
-								Send Message
-							</button>
-						</div>
-					</form>
-				</div>
+				{/* <div className={`${styles.contact_form} ${mixins.box_shadow}`}> */}
+				{/* 	<form onSubmit={handleSubmit(onSubmit)}> */}
+				{/* 		<div className={styles.row}> */}
+				{/* 			<InputField */}
+				{/* 				required */}
+				{/* 				type='text' */}
+				{/* 				placeholder='Name' */}
+				{/* 				{...contactForm('from_name')} */}
+				{/* 				error={errors.from_name} */}
+				{/* 			/> */}
+				{/* 		</div> */}
+				{/* 		<div className={styles.row}> */}
+				{/* 			<InputField */}
+				{/* 				required */}
+				{/* 				type='email' */}
+				{/* 				placeholder='Email' */}
+				{/* 				{...contactForm('reply_to')} */}
+				{/* 				error={errors.reply_to} */}
+				{/* 			/> */}
+				{/* 		</div> */}
+				{/* 		<div className={styles.row}> */}
+				{/* 			<TextArea */}
+				{/* 				required */}
+				{/* 				placeholder='Message' */}
+				{/* 				{...contactForm('message')} */}
+				{/* 				error={errors.message} */}
+				{/* 			/> */}
+				{/* 		</div> */}
+				{/* 		<div className={styles.row}> */}
+				{/* 			<button disabled={isSubmitting} className={mixins.button_alt}> */}
+				{/* 				Send Message */}
+				{/* 			</button> */}
+				{/* 		</div> */}
+				{/* 	</form> */}
+				{/* </div> */}
 				<div className={`${styles.contact_info} ${mixins.box_shadow}`}>
 					<div className={styles.info_box}>
 						<div>
