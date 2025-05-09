@@ -14,15 +14,16 @@ const About = () => {
 			<div className={styles.about_inner}>
 				<div>
 					<p>
-						Hello! My name is Razak and I enjoy creating things that live on the
-						internet. I started programming about six years ago in python. I really
-						enjoyed building websites with flask and django. I also enjoyed creating
-						automation and web scraping scripts with my python knowledge.
+            Hello! My name is Razak. I'm a versatile software engineer with diverse
+            experience designing and building both frontend and backend systems.
+            Over the years, I have built robust frontends, developed REST APIs and
+            designed database systems for various applications.
 						<br />
 						<br />
-						Nowadays, I write backends with node and express. Although I enjoy backend
-						development, I am also a competent frontend developer with react and
-						typescript. I also have experience with docker and postgresql.
+            My collaboration with cross-functional teams has been key to transforming
+            creative concepts into measurable business successes. Whether deploying
+            applications in cloud environments or architecting REST APIs and database systems,
+            I thrive on turning complex challenges into effective, scalable solutions.
 					</p>
 					<div className={styles.about_cta}>
 						<a href='#contact' className={`${mixins.btn} ${mixins.btn_cta}`}>
