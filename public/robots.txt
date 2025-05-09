@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://razakmo.me
+Host: https://razakmo.vercel.app
 
 # Sitemaps
-Sitemap: https://razakmo.me/sitemap.xml
+Sitemap: https://razakmo.vercel.app/sitemap.xml
