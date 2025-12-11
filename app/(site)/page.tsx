@@ -1,10 +1,11 @@
-import Footer from '../../components/Footer';
 import About from '../../components/layout/About';
 import Contact from '../../components/layout/Contact';
 import Featured from '../../components/layout/Featured';
 import Showcase from '../../components/layout/Showcase';
-import Navbar from '../../components/Navbar';
-import ToastWrapper from '../../components/ToastWrapper';
+
+import { Navbar } from '../../components/navbar';
+import { Footer } from '../../components/footer';
+import ToastWrapper from '../../components/toast-wrapper';
 
 export const metadata = {
 	title: 'Home',

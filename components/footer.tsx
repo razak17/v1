@@ -3,7 +3,7 @@ import mixins from '../styles/Mixins.module.css';
 import { footerLinks, navLinks, socialMedia } from '../config/site';
 import { Icons } from './icons';
 
-const Footer = () => {
+export function Footer() {
 	return (
 		<footer className={`${mixins.bg_primary} ${styles.container}`}>
 			<div className={`${mixins.container} ${styles.footer_grid}`}>
@@ -58,6 +58,4 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
-
-export default Footer;
+}

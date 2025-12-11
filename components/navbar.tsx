@@ -5,7 +5,7 @@ import styles from '../styles/Navbar.module.css';
 import mixins from '../styles/Mixins.module.css';
 import { useState } from 'react';
 
-const Navbar = () => {
+export function Navbar() {
 	const [activeLink, setActiveLink] = useState('#');
 
 	return (
@@ -42,6 +42,4 @@ const Navbar = () => {
 			</div>
 		</header>
 	);
-};
-
-export default Navbar;
+}

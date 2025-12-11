@@ -2,7 +2,7 @@
 
 import { socialMedia } from '../../config/site';
 import { Icons } from '../icons';
-// import { ContactForm } from '../ContactForm';
+// import { ContactForm } from '../contact-form';
 
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '../../styles/Contact.module.css';

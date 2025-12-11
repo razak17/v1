@@ -5,12 +5,12 @@ import {
 	ContactFormSchemaType,
 	sendEmail,
 } from '../utils/sendEmail';
-import { InputField, TextArea } from './InputField';
+import { InputField, TextArea } from './input-field';
 import styles from '../../styles/Contact.module.css';
 import mixins from '../../styles/Mixins.module.css';
 import { toast } from 'react-toastify';
 
-export const ContactForm = () => {
+export function ContactForm() {
 	const {
 		register: contactForm,
 		handleSubmit,
@@ -92,4 +92,4 @@ export const ContactForm = () => {
 			</div>
 		</>
 	);
-};
+}
