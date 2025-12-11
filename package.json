@@ -1,7 +1,25 @@
 {
   "name": "v1",
   "version": "0.1.0",
+  "description": "A minimal portfolio website.",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Razak Mo",
+    "email": "razakmoapps@gmail.com",
+    "url": "https://github.com/razak17"
+  },
+  "contributors": [
+    {
+      "name": "Razak Mo",
+      "email": "razakmoapps@gmail.com",
+      "url": "https://github.com/razak17"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razak17/v1.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
