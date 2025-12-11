@@ -1,6 +1,6 @@
 import styles from '../../styles/About.module.css';
 import mixins from '../../styles/Mixins.module.css';
-import { skills } from '../data';
+import { skills } from '../../config/site';
 
 const About = () => {
 	return (

@@ -1,5 +1,5 @@
-import { projects } from '../data';
-import Icon from '../icons/icon';
+import { projects } from '../../config/site';
+import { Icons } from '../icons';
 
 import mixins from '../../styles/Mixins.module.css';
 import styles from '../../styles/Projects.module.css';
@@ -35,17 +35,17 @@ const Projects = () => {
 									<header>
 										<div className={`${styles.project_top} ${mixins.flex_between}`}>
 											<div className={styles.folder}>
-												<Icon name='Folder' />
+												<Icons.folder />
 											</div>
 											<div className={styles.project_links}>
 												{github && (
 													<a
 														href={github}
-														aria-label='GitHub Link'
+														aria-label={project.title}
 														target='_blank'
 														rel='noreferrer'
 													>
-														<Icon name='GitHub' />
+														<Icons.github />
 													</a>
 												)}
 												{external && (
@@ -56,7 +56,7 @@ const Projects = () => {
 														target='_blank'
 														rel='noreferrer'
 													>
-														<Icon name='External' />
+														<Icons.external />
 													</a>
 												)}
 											</div>

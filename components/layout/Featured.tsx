@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { projects } from '../data';
-import Icon from '../icons/icon';
+import { featuredProjects } from '../../config/site';
+import { Icons } from '../icons';
 
 import styles from '../../styles/Featured.module.css';
 import mixins from '../../styles/Mixins.module.css';
@@ -13,18 +13,23 @@ const Featured = () => {
 			</h1>
 			<div className={`${mixins.text_center} ${mixins.m1}`}>
 				<p className={mixins.lead}>
-					Here are some of my work that I&apos;ve done in various programming
-					languages.
+					Here are some of projects I&apos;ve worked on.
 				</p>
 			</div>
 
 			<div className={styles.work_grid}>
-				{projects &&
-					projects.map((project, index) => (
+				{featuredProjects &&
+					featuredProjects.map((project, index) => (
 						<div key={index} className={styles.work_item}>
 							<div className={`${styles.work_frame} ${mixins.box_shadow}`}>
 								<div className={styles.image}>
-									<Image src={project.image} alt='' />
+									<Image
+										src={project.image}
+										alt='Project Image'
+										loading='lazy'
+										width={600}
+										height={100}
+									/>
 								</div>
 								<div>
 									<a href={project.external} target='_blank' rel='noreferrer'>
@@ -42,12 +47,12 @@ const Featured = () => {
 										<div className={styles.icons}>
 											{project.github && (
 												<a href={project.github} target='_blank' rel='noreferrer'>
-													<Icon name='GitHub' />
+													<Icons.github />
 												</a>
 											)}
 											{project.external && (
 												<a href={project.external} target='_blank' rel='noreferrer'>
-													<Icon name='External' />
+													<Icons.external />
 												</a>
 											)}
 										</div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { navLinks } from './data';
+import { navLinks } from '../config/site';
 import styles from '../styles/Navbar.module.css';
 import mixins from '../styles/Mixins.module.css';
 import { useState } from 'react';

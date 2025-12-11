@@ -1,7 +1,7 @@
 import styles from '../styles/Footer.module.css';
 import mixins from '../styles/Mixins.module.css';
-import { footerLinks, navLinks, socialMedia } from './data';
-import Icon, { IconType } from './icons/icon';
+import { footerLinks, navLinks, socialMedia } from '../config/site';
+import { Icons } from './icons';
 
 const Footer = () => {
 	return (
@@ -11,15 +11,18 @@ const Footer = () => {
 					<h2>Razak Mo</h2>
 					<p className={mixins.text_transparent}>Software Developer</p>
 					<ul className={styles.social_list}>
-						{socialMedia.map((item) => (
-							<li key={`<social-${item.name}`}>
-								<a href={item.url} target='_blank' rel='noreferrer'>
-									<Icon name={item.name as IconType} />
-								</a>
-							</li>
-						))}
+						{socialMedia.map((item) => {
+							const Icon = item.icon ? Icons[item.icon] : Icons.external;
+							return (
+								<li key={`<social-${item.name}`}>
+									<a href={item.url} target='_blank' rel='noreferrer'>
+										<Icon />
+									</a>
+								</li>
+							);
+						})}
 					</ul>
-					<p className={styles.copy_text}>&copy; 2022 Razak Mo</p>
+					<p className={styles.copy_text}>&copy; 2025 Razak Mo</p>
 				</div>
 				<div>
 					<ul>

@@ -1,13 +1,9 @@
-import { StaticImageData } from 'next/image';
-import howdyImg from '/assets/howdy.png';
-import ytImg from '/assets/yt.png';
-import tiktikImg from '/assets/tiktik.png';
-import algovisualImg from '/assets/algo-visual.png';
+import { Icons } from '../components/icons';
 
 type ProjectType = {
 	title: string;
 	description: string;
-	image: StaticImageData;
+	image: string;
 	tech: string[];
 	github?: string;
 	external?: string;
@@ -47,10 +43,13 @@ export const socialMedia = [
 	{
 		name: 'GitHub',
 		url: 'https://github.com/razak17',
+		icon: 'github' as keyof typeof Icons,
 	},
+
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/theRazakMo',
+		icon: 'twitter' as keyof typeof Icons,
 	},
 ];
 
@@ -87,7 +86,7 @@ export const projects: ProjectType[] = [
 			'mongodb',
 			'firebase',
 		],
-		image: howdyImg,
+		image: '/projects/howdy.png',
 		github: 'https://github.com/razak17/howdy-ui',
 		external: 'https://howwwdy-ui.vercel.app',
 	},
@@ -103,7 +102,7 @@ export const projects: ProjectType[] = [
 			'express',
 			'firebase',
 		],
-		image: ytImg,
+		image: '/projects/yt.png',
 		github: 'https://github.com/razak17/youtube-clone-frontend',
 		external: 'https://yt-clone-v1.vercel.app',
 	},
@@ -112,7 +111,7 @@ export const projects: ProjectType[] = [
 		description:
 			'A tik tok clone that allows users to upload videos, like, comment on videos and like videos.',
 		tech: ['react', 'redux', 'express', 'mongodb', 'fireabase'],
-		image: tiktikImg,
+		image: '/projects/tiktik.png',
 		github: 'https://github.com/razak17/howdy',
 		external: 'https://tiktik-ui.vercel.app',
 	},
@@ -121,7 +120,44 @@ export const projects: ProjectType[] = [
 		description:
 			'Visualize sorting algorithms like bubble sort, merge sort, quick sort, and more. See how they work step by step.',
 		tech: ['react', 'tailwind', 'algorithms'],
-		image: algovisualImg,
+		image: '/projects/algo-visual.png',
+		github: 'https://github.com/razak17/algo-visualizer',
+		external: 'https://algo-visualizer-razakmo.vercel.app',
+	},
+];
+
+export const featuredProjects: ProjectType[] = [
+	{
+		title: 'Evershop',
+		description:
+			'A ecommerce shop for electronics built with Next.js, Shadcn, Postgresql and Stripe.',
+		tech: ['NextJS', 'Shadcn', 'Postgresql', 'Neon', 'Stripe'],
+		image: '/projects/evershop.png',
+		github: 'https://github.com/razak17/next-ecommerce-app',
+		external: 'https://ecommerce.razakmo.tech',
+	},
+	{
+		title: 'G-Client',
+		description:
+			"A comprehensive learning management system (LMS) built as part of Azubi Africa's TMP program (Cohort 2).",
+		tech: ['NextJS', 'Tailwind', 'Postgres'],
+		image: '/projects/g-client.png',
+		github: 'https://github.com/razak17/next-lms-platform',
+		external: 'https://lms.razakmo.tech',
+	},
+	{
+		title: 'Docs',
+		description: 'A Google Docs clone built with Next.js 15 and React 19.',
+		tech: ['NextJS', 'Tailwind', 'Convex'],
+		image: '/projects/docs.png',
+		github: 'https://github.com/razak17/fullstack-docs-clone',
+		external: 'https://fullstack-docs-clone.vercel.app',
+	},
+	{
+		title: 'Algorithm Visualizer',
+		description: 'Visualize sorting algorithms. See how they work step by step.',
+		tech: ['react', 'tailwind', 'algorithms'],
+		image: '/projects/algo-visual.png',
 		github: 'https://github.com/razak17/algo-visualizer',
 		external: 'https://algo-visualizer-razakmo.vercel.app',
 	},
