@@ -1,57 +1,57 @@
 .about_inner {
-	display: grid;
-	margin: 2rem 0 0 0;
-	grid-template-columns: 4fr 3fr;
-	grid-gap: 3rem;
+  display: grid;
+  margin: 2rem 0 0 0;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: 3rem;
 }
 
 .about_left {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .about_cta {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .about_cta a {
-	margin: 1rem 1rem 0 0;
+  margin: 1rem 1rem 0 0;
 }
 
 .skills_list {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(140px, 200px));
-	grid-gap: 0 10px;
-	padding: 0;
-	margin: 1rem 0 0 0;
-	overflow: hidden;
-	list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-gap: 0 10px;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  overflow: hidden;
+  list-style: none;
 }
 
 .skills_list li {
-	position: relative;
-	margin-bottom: 10px;
-	padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .skills_list li:before {
-	content: '▹';
-	position: absolute;
-	left: 0;
-	color: var(--alert-color);
-	font-size: 1.5rem;
-	line-height: 1.5rem;
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--alert-color);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .tech {
-	position: relative;
+  position: relative;
 }
 
 @media (max-width: 768px) {
-	.about_inner {
-		display: block;
-	}
-	.tech {
-		margin: 2rem 0;
-	}
+  .about_inner {
+    display: block;
+  }
+  .tech {
+    margin: 2rem 0;
+  }
 }
