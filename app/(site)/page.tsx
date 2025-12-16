@@ -1,3 +1,4 @@
+// import Projects from "@/components/layout/Projects";
 import About from "../../components/layout/About";
 import Contact from "../../components/layout/Contact";
 import Featured from "../../components/layout/Featured";
@@ -14,6 +15,7 @@ const Home = () => {
       <Showcase />
       <About />
       <Featured />
+      {/* <Projects /> */}
       <Contact />
     </>
   );

@@ -26,9 +26,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           fontMono.variable,
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="relative flex min-h-screen flex-col">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
         <ToastWrapper />
       </body>
     </html>

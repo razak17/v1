@@ -4,31 +4,30 @@
 import { useState } from "react";
 
 import { navLinks } from "../config/site";
-import mixins from "../styles/Mixins.module.css";
-import styles from "../styles/Navbar.module.css";
 
 export function Navbar() {
   const [activeLink, setActiveLink] = useState("#");
 
   return (
-    <header className={styles.navbar}>
-      <div className={`${mixins.container} ${styles.nav_flex}`}>
+    <header className="relative top-0 z-[1100] h-[110px] overflow-hidden bg-primary md:sticky md:h-[70px]">
+      <div className="mx-auto flex h-full max-w-[1200px] flex-col items-center justify-between px-10 md:flex-row">
         <a href="#">
-          <h1 className={styles.logo}>Razak Mo.</h1>
+          <h1 className="py-3 font-bold font-mono text-3xl text-light md:py-0">
+            Razak Mo.
+          </h1>
         </a>
-        <nav className={styles.nav_links}>
-          <ul>
+
+        <nav className="flex items-center justify-center">
+          <ul className="flex gap-4 bg-black/10 p-4 md:bg-transparent md:p-0">
             {navLinks.map((item) => (
               <li
                 key={`link-${item.name}`}
                 onClick={() => setActiveLink(item.url)}
               >
                 <a
-                  className={
-                    activeLink === item.url
-                      ? `${styles.nav_link} ${styles.active}`
-                      : `${styles.nav_link}`
-                  }
+                  className={`mx-0.5 px-4 py-2.5 text-light capitalize hover:border-white hover:border-b-2 ${
+                    activeLink === item.url ? "border-white border-b-2" : ""
+                  }`}
                   href={item.url}
                 >
                   {item.name}
@@ -37,10 +36,11 @@ export function Navbar() {
             ))}
           </ul>
         </nav>
+
         <a
           href="#contact"
           onClick={() => setActiveLink("#contact")}
-          className={`${styles.cta} ${mixins.btn} ${mixins.btn_cta}`}
+          className="hidden cursor-pointer rounded-md bg-alert px-6 py-3 text-white hover:scale-[0.98] hover:bg-primary-hover md:inline-block"
         >
           Contact
         </a>

@@ -1,6 +1,37 @@
 @import 'tailwindcss';
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+	--color-secondary: var(--secondary);
+	--color-dark: var(--dark);
+	--color-light: var(--light);
+	--color-alert: var(--alert);
+	--color-light-navy: var(--light-navy);
+	--color-transparent: var(--transparent);
+	--color-primary-hover: var(--primary-hover);
+	--color-hover: var(--hover);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
 :root {
+  --background: oklch(0.9672 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.2474 0.0688 249.31);
+  --secondary: oklch(0.4437 0.1613 26.9);
+  --dark: oklch(0.2101 0.0318 264.66);
+  --light: oklch(0.9672 0 0);
+  --alert: oklch(0.5771 0.2152 27.33);
+  --light-navy: oklch(0.2552 0.0612 260.93);
+  --transparent: oklch(0.967 0.0029 264.54 / 30%);
+  --primary-hover: oklch(0.5039 0.1783 26.47 / 90%);
+  --hover: oklch(0.2544 0.0629 254.22 / 90%);
+	--box-shadow: oklch(0.1527 0.0374 253.16 / 70%);
+	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	--border-radius: 5px;
+
 	--primary-color: #002240;
 	--secondary-color: #991b1b;
 	--dark-color: #111827;
@@ -10,43 +41,15 @@
 	--transparent-color: rgba(243, 244, 246, 0.3);
 	--btn-primary-hover: rgba(180, 38, 38, 0.9);
 	--button-hover: rgba(10, 35, 64, 0.9);
-	--box-shadow: rgba(2, 12, 27, 0.7);
-	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-	--border-radius: 5px;
 }
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-body {
-	font-family: 'Lato', sans-serif;
-	color: var(--primary-color);
-	background-color: var(--light-color);
-	line-height: 1.5;
-}
-
-ul {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-p {
-	font-size: 1rem;
-}
-
-svg {
-	width: 100%;
-	height: 100%;
-	fill: var(--alert-color);
-	vertical-align: middle;
-	color: var(--transparent-color);
-}
+/* svg { */
+/* 	width: 100%; */
+/* 	height: 100%; */
+/* 	fill: var(--alert-color); */
+/* 	vertical-align: middle; */
+/* 	color: var(--transparent-color); */
+/* } */
 
 .feather {
 	fill: none;
