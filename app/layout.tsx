@@ -1,13 +1,12 @@
-import { Lato } from "next/font/google";
 import type { ReactNode } from "react";
+
+import { fontMono, fontSans } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 import "../styles/globals.css";
 
-const font = Lato({
-  weight: ["400", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
+import ToastWrapper from "@/components/toast-wrapper";
 
 export const metadata = {
   title: {
@@ -20,7 +19,18 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontMono.variable,
+        )}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+        <ToastWrapper />
+      </body>
     </html>
   );
 }
