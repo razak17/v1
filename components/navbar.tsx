@@ -50,7 +50,7 @@ export function Navbar() {
 
   return (
     <header className="relative top-0 z-[1100] h-[110px] overflow-hidden bg-primary md:sticky md:h-[70px]">
-      <div className="mx-auto flex h-full max-w-[1200px] flex-col items-center justify-between px-10 md:flex-row">
+      <div className="mx-auto flex h-full max-w-7xl flex-col items-center justify-between md:flex-row">
         <a href="#">
           <h1 className="py-3 font-bold font-mono text-3xl text-light md:py-0">
             Razak Mo.
@@ -65,8 +65,9 @@ export function Navbar() {
                 onClick={() => setActiveLink(item.url)}
               >
                 <a
-                  className={`mx-0.5 px-4 py-2.5 text-light capitalize hover:border-white hover:border-b-2 ${activeLink === item.url ? "border-white border-b-2" : ""
-                    }`}
+                  className={`mx-0.5 px-4 py-2.5 text-light capitalize hover:border-white hover:border-b-2 ${
+                    activeLink === item.url ? "border-white border-b-2" : ""
+                  }`}
                   href={item.url}
                 >
                   {item.name}

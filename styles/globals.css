@@ -8,8 +8,7 @@
 	--color-dark: var(--dark);
 	--color-light: var(--light);
 	--color-alert: var(--alert);
-	--color-light-navy: var(--light-navy);
-	--color-transparent: var(--transparent);
+	--color-transp: var(--transparent);
 	--color-primary-hover: var(--primary-hover);
 	--color-hover: var(--hover);
   --font-sans: var(--font-sans);
@@ -24,8 +23,6 @@
   --dark: oklch(0.2101 0.0318 264.66);
   --light: oklch(0.9672 0 0);
   --alert: oklch(0.5771 0.2152 27.33);
-  --light-navy: oklch(0.2552 0.0612 260.93);
-  --transparent: oklch(0.967 0.0029 264.54 / 30%);
   --primary-hover: oklch(0.5039 0.1783 26.47 / 90%);
   --hover: oklch(0.2544 0.0629 254.22 / 90%);
 	--box-shadow: oklch(0.1527 0.0374 253.16 / 70%);
@@ -37,7 +34,6 @@
 	--dark-color: #111827;
 	--light-color: #f4f4f4;
 	--alert-color: #dc2626;
-	--light-navy: #112240;
 	--transparent-color: rgba(243, 244, 246, 0.3);
 	--btn-primary-hover: rgba(180, 38, 38, 0.9);
 	--button-hover: rgba(10, 35, 64, 0.9);

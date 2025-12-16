@@ -1,19 +1,15 @@
 import { skills } from "../../config/site";
-import styles from "../../styles/About.module.css";
-import mixins from "../../styles/Mixins.module.css";
 
 const About = () => {
   return (
-    <section id="about" className={`${mixins.container} ${mixins.section}`}>
-      <h1
-        className={`${mixins.md} ${mixins.text_primary} ${mixins.text_center}`}
-      >
+    <section id="about" className="mx-auto max-w-7xl pt-20">
+      <h1 className="text-center font-semibold text-3xl text-primary">
         About Me
       </h1>
-      <div className={`${mixins.text_center} ${mixins.m1} ${mixins.lead}`}>
-        <p className={mixins.lead}>A little about myself and my capabilities</p>
+      <div className="my-4 text-center text-2xl">
+        <p className="text-2xl">A little about myself and my capabilities</p>
       </div>
-      <div className={styles.about_inner}>
+      <div className="mt-8 grid grid-cols-1 gap-12 md:grid-cols-[4fr_3fr]">
         <div>
           <p>
             Hello! My name is Razak. I&apos;m a versatile software engineer with
@@ -28,19 +24,27 @@ const About = () => {
             REST APIs and database systems, I thrive on turning complex
             challenges into effective, scalable solutions.
           </p>
-          <div className={styles.about_cta}>
-            <a href="#contact" className={`${mixins.btn} ${mixins.btn_cta}`}>
+          <div className="mt-6">
+            <a
+              href="#contact"
+              className="inline-block cursor-pointer rounded-md border-none bg-alert px-6 py-3 text-background text-lg hover:scale-[0.98] hover:bg-primary-hover"
+            >
               Get In touch
             </a>
           </div>
         </div>
-        <div className={styles.tech}>
+        <div className="my-8 md:relative md:my-0">
           <p>
             Listed below are some of the technologies I currently work with:
           </p>
-          <ul className={styles.skills_list}>
+          <ul className="mt-4 grid list-none grid-cols-[repeat(2,minmax(140px,200px))] gap-x-2.5 gap-y-0 overflow-hidden p-0">
             {skills?.map((skill, i) => (
-              <li key={i}>{skill}</li>
+              <li
+                className="relative mb-4 pl-6 before:absolute before:left-0 before:text-2xl before:text-alert before:leading-[1.0] before:content-['▹']"
+                key={i}
+              >
+                {skill}
+              </li>
             ))}
           </ul>
         </div>
