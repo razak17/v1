@@ -1,7 +1,7 @@
-// import Projects from "@/components/layout/Projects";
+// import Projects from "@/components/layout/projects";
 import About from "../../components/layout/about";
-import Contact from "../../components/layout/Contact";
-import Featured from "../../components/layout/Featured";
+import Contact from "../../components/layout/contact";
+import Featured from "../../components/layout/featured";
 import Showcase from "../../components/layout/showcase";
 
 export const metadata = {

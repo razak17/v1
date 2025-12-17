@@ -50,9 +50,9 @@ export function Navbar() {
 
   return (
     <header className="relative top-0 z-[1100] h-[110px] overflow-hidden bg-primary md:sticky md:h-[70px]">
-      <div className="mx-auto flex h-full max-w-7xl flex-col items-center justify-between md:flex-row">
+      <div className="flex h-full flex-col items-center justify-between px-4 md:flex-row lg:mx-auto lg:max-w-7xl lg:p-0 lg:px-0">
         <a href="#">
-          <h1 className="py-3 font-bold font-mono text-3xl text-light md:py-0">
+          <h1 className="py-3 font-bold font-mono text-3xl text-background md:py-0">
             Razak Mo.
           </h1>
         </a>
@@ -65,7 +65,7 @@ export function Navbar() {
                 onClick={() => setActiveLink(item.url)}
               >
                 <a
-                  className={`mx-0.5 px-4 py-2.5 text-light capitalize hover:border-white hover:border-b-2 ${
+                  className={`mx-0.5 px-4 py-2.5 text-background capitalize hover:border-white hover:border-b-2 ${
                     activeLink === item.url ? "border-white border-b-2" : ""
                   }`}
                   href={item.url}
@@ -80,7 +80,7 @@ export function Navbar() {
         <a
           href="#contact"
           onClick={() => setActiveLink("#contact")}
-          className="hidden cursor-pointer rounded-md bg-alert px-6 py-2 text-white hover:scale-[0.98] hover:bg-primary-hover md:inline-block"
+          className="hidden cursor-pointer rounded-md bg-alert px-6 py-2 text-background hover:scale-[0.98] hover:bg-primary-hover md:inline-block"
         >
           Contact
         </a>

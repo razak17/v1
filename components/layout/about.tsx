@@ -2,12 +2,10 @@ import { skills } from "../../config/site";
 
 const About = () => {
   return (
-    <section id="about" className="mx-auto max-w-7xl pt-20">
-      <h1 className="text-center font-semibold text-3xl text-primary">
-        About Me
-      </h1>
-      <div className="my-4 text-center text-2xl">
-        <p className="text-2xl">A little about myself and my capabilities</p>
+    <section id="about" className="px-4 pt-20 lg:mx-auto lg:max-w-7xl lg:px-0">
+      <h1 className="text-center font-bold text-3xl text-primary">About Me</h1>
+      <div className="my-4 text-center">
+        <p className="text-xl">A little about myself and my capabilities</p>
       </div>
       <div className="mt-8 grid grid-cols-1 gap-12 md:grid-cols-[4fr_3fr]">
         <div>

@@ -12,10 +12,10 @@ const Showcase = () => {
     >
       <div className="mx-auto grid h-full max-w-7xl grid-cols-[75%_auto] items-center justify-center gap-8 overflow-visible md:grid-cols-[55%_auto]">
         <div>
-          <h1 className="font-bold text-6xl md:text-7xl md:leading-[1.2]">
+          <h1 className="font-bold text-7xl md:leading-[1.2]">
             Full Stack Software Developer
           </h1>
-          <p className="mt-4 text-gray-500 text-lg md:text-xl md:leading-[1.6]">
+          <p className="mt-4 text-gray-600 text-lg md:text-2xl md:leading-[1.6]">
             Full Stack Software Developer with 4+ years of experience designing,
             building, and optimizing scalable web applications.
           </p>
