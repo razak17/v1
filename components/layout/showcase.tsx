@@ -1,15 +1,6 @@
-import { cn } from "@/lib/utils";
-
-import styles from "../../styles/Showcase.module.css";
-
 const Showcase = () => {
   return (
-    <div
-      className={cn(
-        "relative h-[calc(100vh-140px)] bg-primary text-background md:h-[calc(100vh-180px)]",
-        styles.showcase,
-      )}
-    >
+    <div className="showcase relative h-[calc(100vh-140px)] bg-primary text-background md:h-[calc(100vh-180px)]">
       <div className="mx-auto grid h-full max-w-7xl grid-cols-[75%_auto] items-center justify-center gap-8 overflow-visible md:grid-cols-[55%_auto]">
         <div>
           <h1 className="font-bold text-7xl md:leading-[1.2]">
